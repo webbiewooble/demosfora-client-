@@ -140,6 +140,7 @@ createPage('product-bowl.html', `
               </div>
             </div>
           </details>
+          
         </div>
       </div>
     </div>
@@ -147,13 +148,89 @@ createPage('product-bowl.html', `
   </div>
 </section>
 
+
+<!-- FAQ Section -->
+<section style="padding: 80px 0; background: #fff; border-top: 1px solid #DDD8CF;">
+  <div class="ctn" style="max-width: 800px;">
+    <h2 style="font-size: 48px; font-weight: 800; text-align: center; margin-bottom: 48px; letter-spacing: -0.02em;">FAQs</h2>
+    
+    <div style="display: flex; flex-direction: column; gap: 12px; font-family: 'Inter', sans-serif;" class="custom-faq-list">
+      
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Is Mango Oats good for weight loss?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, it is high in fibre and protein which helps keep you full for longer.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Can I eat Mango Oats daily?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, it is suitable as a regular healthy breakfast option.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Does it contain added sugar?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          No, this product contains no added sugar.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Is it suitable for gym diets?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, the 18g protein content makes it suitable for fitness-focused diets.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Can kids eat Mango Oats?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, it can be enjoyed by both kids and adults.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- Include CSS to rotate the arrow icon when details is open -->
+<style>
+.custom-faq-list details[open] summary .faq-icon {
+  transform: rotate(90deg);
+}
+.custom-faq-list details summary::-webkit-details-marker {
+  display:none;
+}
+.custom-faq-list .faq-icon {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+</style>
+
 <!-- You might also like section -->
 <section style="padding: 80px 0; background: #FAF9F6; border-top: 1px solid #DDD8CF;">
   <div class="ctn">
     <h3 style="font-size: 32px; margin-bottom: 40px; text-align: center;">You May Also Like</h3>
-    <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 24px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;" class="ymal-scroll">
+    <div class="prod-grid ymal-custom-grid">
       
-    <div class="prod-card" style="min-width: 280px; flex: 1 0 auto; scroll-snap-align: start;">
+    <div class="prod-card">
       <a href="product-bar.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=400&q=80&auto=format&fit=crop" alt="9AM Protein Bar" style="border-radius:12px" /></a>
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-bar.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">9AM Protein Bar</h3></a><p class="prod-tagline">Fuel, not a treat</p></div><span class="badge">30g Protein</span></div>
@@ -163,7 +240,7 @@ createPage('product-bowl.html', `
       </div>
     </div>
 
-    <div class="prod-card" style="min-width: 280px; flex: 1 0 auto; scroll-snap-align: start;">
+    <div class="prod-card">
       <a href="product-pb.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1612187209234-1c7a8f377ba4?w=400&q=80&auto=format&fit=crop" alt="Stone-Ground PB" style="border-radius:12px" /></a>
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-pb.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Stone-Ground PB</h3></a><p class="prod-tagline">One ingredient</p></div><span class="badge">10g Protein</span></div>
@@ -177,16 +254,10 @@ createPage('product-bowl.html', `
   </div>
 </section>
 <style>
-.ymal-scroll::-webkit-scrollbar {
-  height: 6px;
-}
-.ymal-scroll::-webkit-scrollbar-track {
-  background: #EAE6DF;
-  border-radius: 4px;
-}
-.ymal-scroll::-webkit-scrollbar-thumb {
-  background: #C8A27A;
-  border-radius: 4px;
+.ymal-custom-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 800px;
+  margin: 0 auto;
 }
 </style>
 <!-- Include CSS for the layout to be responsive -->
@@ -322,9 +393,9 @@ createPage('product-bar.html', `
 <section style="padding: 80px 0; background: #FAF9F6; border-top: 1px solid #DDD8CF;">
   <div class="ctn">
     <h3 style="font-size: 32px; margin-bottom: 40px; text-align: center;">You May Also Like</h3>
-    <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 24px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;" class="ymal-scroll">
+    <div class="prod-grid ymal-custom-grid">
       
-    <div class="prod-card" style="min-width: 280px; flex: 1 0 auto; scroll-snap-align: start;">
+    <div class="prod-card">
       <a href="product-bowl.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=400&q=80&auto=format&fit=crop" alt="Mango Oats" style="border-radius:12px" /></a>
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-bowl.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mango Oats</h3></a><p class="prod-tagline">Focus Breakfast</p></div><span class="badge">18g Protein</span></div>
@@ -334,7 +405,7 @@ createPage('product-bar.html', `
       </div>
     </div>
 
-    <div class="prod-card" style="min-width: 280px; flex: 1 0 auto; scroll-snap-align: start;">
+    <div class="prod-card">
       <a href="product-pb.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1612187209234-1c7a8f377ba4?w=400&q=80&auto=format&fit=crop" alt="Stone-Ground PB" style="border-radius:12px" /></a>
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-pb.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Stone-Ground PB</h3></a><p class="prod-tagline">One ingredient</p></div><span class="badge">10g Protein</span></div>
@@ -348,16 +419,10 @@ createPage('product-bar.html', `
   </div>
 </section>
 <style>
-.ymal-scroll::-webkit-scrollbar {
-  height: 6px;
-}
-.ymal-scroll::-webkit-scrollbar-track {
-  background: #EAE6DF;
-  border-radius: 4px;
-}
-.ymal-scroll::-webkit-scrollbar-thumb {
-  background: #C8A27A;
-  border-radius: 4px;
+.ymal-custom-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 800px;
+  margin: 0 auto;
 }
 </style>
 `);
@@ -475,9 +540,9 @@ createPage('product-pb.html', `
 <section style="padding: 80px 0; background: #FAF9F6; border-top: 1px solid #DDD8CF;">
   <div class="ctn">
     <h3 style="font-size: 32px; margin-bottom: 40px; text-align: center;">You May Also Like</h3>
-    <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 24px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;" class="ymal-scroll">
+    <div class="prod-grid ymal-custom-grid">
       
-    <div class="prod-card" style="min-width: 280px; flex: 1 0 auto; scroll-snap-align: start;">
+    <div class="prod-card">
       <a href="product-bowl.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=400&q=80&auto=format&fit=crop" alt="Mango Oats" style="border-radius:12px" /></a>
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-bowl.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mango Oats</h3></a><p class="prod-tagline">Focus Breakfast</p></div><span class="badge">18g Protein</span></div>
@@ -487,7 +552,7 @@ createPage('product-pb.html', `
       </div>
     </div>
 
-    <div class="prod-card" style="min-width: 280px; flex: 1 0 auto; scroll-snap-align: start;">
+    <div class="prod-card">
       <a href="product-bar.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=400&q=80&auto=format&fit=crop" alt="9AM Protein Bar" style="border-radius:12px" /></a>
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-bar.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">9AM Protein Bar</h3></a><p class="prod-tagline">Fuel, not a treat</p></div><span class="badge">30g Protein</span></div>
@@ -501,16 +566,12 @@ createPage('product-pb.html', `
   </div>
 </section>
 <style>
-.ymal-scroll::-webkit-scrollbar {
-  height: 6px;
-}
-.ymal-scroll::-webkit-scrollbar-track {
-  background: #EAE6DF;
-  border-radius: 4px;
-}
-.ymal-scroll::-webkit-scrollbar-thumb {
-  background: #C8A27A;
-  border-radius: 4px;
+.ymal-custom-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 800px;
+  margin: 0 auto;
 }
 </style>
 `);
+
+// Adding custom CSS for YMAL if not already there

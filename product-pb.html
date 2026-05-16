@@ -328,9 +328,9 @@ h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
 <section style="padding: 80px 0; background: #FAF9F6; border-top: 1px solid #DDD8CF;">
   <div class="ctn">
     <h3 style="font-size: 32px; margin-bottom: 40px; text-align: center;">You May Also Like</h3>
-    <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 24px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;" class="ymal-scroll">
+    <div class="prod-grid ymal-custom-grid">
       
-    <div class="prod-card" style="min-width: 280px; flex: 1 0 auto; scroll-snap-align: start;">
+    <div class="prod-card">
       <a href="product-bowl.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=400&q=80&auto=format&fit=crop" alt="Mango Oats" style="border-radius:12px" /></a>
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-bowl.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mango Oats</h3></a><p class="prod-tagline">Focus Breakfast</p></div><span class="badge">18g Protein</span></div>
@@ -340,7 +340,7 @@ h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
       </div>
     </div>
 
-    <div class="prod-card" style="min-width: 280px; flex: 1 0 auto; scroll-snap-align: start;">
+    <div class="prod-card">
       <a href="product-bar.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=400&q=80&auto=format&fit=crop" alt="9AM Protein Bar" style="border-radius:12px" /></a>
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-bar.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">9AM Protein Bar</h3></a><p class="prod-tagline">Fuel, not a treat</p></div><span class="badge">30g Protein</span></div>
@@ -354,16 +354,10 @@ h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
   </div>
 </section>
 <style>
-.ymal-scroll::-webkit-scrollbar {
-  height: 6px;
-}
-.ymal-scroll::-webkit-scrollbar-track {
-  background: #EAE6DF;
-  border-radius: 4px;
-}
-.ymal-scroll::-webkit-scrollbar-thumb {
-  background: #C8A27A;
-  border-radius: 4px;
+.ymal-custom-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 800px;
+  margin: 0 auto;
 }
 </style>
 
