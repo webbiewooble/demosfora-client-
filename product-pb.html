@@ -189,13 +189,10 @@ h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
 .footer-socials{display:flex;gap:16px}
 .footer-socials a{color:#8A8A8A;transition:color .2s}
 .footer-socials a:hover{color:#1A1A1A}
-
 .page-offset { padding-top: 140px !important; }
 </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav class="nav-9am">
 <div class="ctn nav-inner">
   <a href="index.html" class="nav-logo">9AM</a>
@@ -219,51 +216,157 @@ h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
   <a href="about.html" onclick="this.parentElement.classList.remove('open')">About</a>
 </div>
 </nav>
-<section class="section reveal page-offset" id="products">
-<div class="ctn">
-  <p class="label">The lineup</p>
-  <h2>Your 9 AM, sorted.</h2>
-  <p class="section-desc">Each product is designed for one thing: making your morning non-negotiable.</p>
-  <div class="prod-grid">
 
-    <div class="prod-card">
-      <a href="product-bowl.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=400&q=80&auto=format&fit=crop" alt="Mango Oats" style="border-radius:12px" /></a>
-      <div class="prod-body">
-        <div class="prod-top"><div><a href="product-bowl.html" style="text-decoration: none;"><h3 style="margin-bottom:2px">Mango Oats</h3></a><p class="prod-tagline">Focus Breakfast</p></div><span class="badge">18g Protein</span></div>
-        <div class="divider"></div>
-        <div class="prod-ingredients"><span>Mango</span><span>Oats</span><span>Seeds</span><span>Ragi</span></div>
-        <div class="prod-why-block"><p class="prod-why-title">Why this works</p><ul class="prod-why-list"><li>High Fibre & Whole Grains</li><li>Steady Energy Release</li><li>No Added Sugar</li></ul></div>
-        <div class="prod-bottom"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
+<section class="section page-offset" style="padding-top: 140px; padding-bottom: 80px; background: #FAF9F6;">
+  <div class="ctn">
+    <!-- Breadcrumbs -->
+    <nav style="margin-bottom: 24px; font-size: 13px; color: #8A8A8A;">
+      <a href="index.html" style="color: inherit; text-decoration: none;">Home</a> <span style="margin: 0 8px;">/</span> 
+      <a href="products.html" style="color: inherit; text-decoration: none;">Products</a> <span style="margin: 0 8px;">/</span> 
+      <span style="color: #1A1A1A;">Stone-Ground PB</span>
+    </nav>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;" class="product-layout">
+      <!-- Left: Image Gallery -->
+      <div style="position: sticky; top: 120px;">
+        <div style="border-radius: 20px; overflow: hidden; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+          <img src="https://images.unsplash.com/photo-1612187209234-1c7a8f377ba4?w=1000&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover; display: block;" alt="Stone-Ground PB">
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 12px;">
+          <div style="border-radius: 12px; overflow: hidden; border: 2px solid #C8A27A; cursor: pointer;"><img src="https://images.unsplash.com/photo-1612187209234-1c7a8f377ba4?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
+        </div>
+      </div>
+      
+      <!-- Right: Product Info -->
+      <div style="padding-bottom: 40px;">
+        <!-- Reviews -->
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+          <div style="color: #FFB800; display: flex; gap: 2px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <span style="font-size: 14px; color: #8A8A8A;">(210 Reviews)</span>
+        </div>
+        
+        <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">Stone-Ground Peanut Butter</h1>
+        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Roasted Unsweetened | Net Weight: 500g | Servings: 15 (30g each)</p>
+        
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 32px;">
+          <span style="font-family:'DM Serif Display'; font-size: 32px; color: #1A1A1A;">₹399</span>
+          <span style="font-size: 18px; color: #8A8A8A; text-decoration: line-through;">₹450</span>
+          <span style="background: #C8A27A; color: #fff; font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 4px; text-transform: uppercase;">Save 11%</span>
+        </div>
+        
+        <p style="margin-bottom:24px; color:#1A1A1A; font-size:16px; line-height: 1.6;">
+          One ingredient. Zero compromise. No palm oil, no added sugar, no emulsifiers. The perfect base for your 9 AM ritual, stone-ground to preserve all the natural nutrients.
+        </p>
+
+        <!-- Options -->
+        <div style="margin-bottom: 32px;">
+          <p style="font-size: 14px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">Select Size:</p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <div style="border: 2px solid #1A1A1A; border-radius: 8px; padding: 12px 20px; cursor: pointer; text-align: center; background: #fff;">
+              <div style="font-weight: 600; font-size: 15px;">500g Jar</div>
+              <div style="color: #8A8A8A; font-size: 13px;">₹399</div>
+            </div>
+            <div style="border: 1px solid #DDD8CF; border-radius: 8px; padding: 12px 20px; cursor: pointer; text-align: center; background: #fff;">
+              <div style="font-weight: 600; font-size: 15px;">1kg Tub</div>
+              <div style="color: #8A8A8A; font-size: 13px;">₹749 <span style="color:#C8A27A;">(Save ₹49)</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Add to cart -->
+        <div style="display: flex; gap: 16px; margin-bottom: 40px;">
+          <div style="display: flex; border: 1px solid #1A1A1A; border-radius: 8px; overflow: hidden; background:#fff;">
+            <button style="padding: 16px 20px; background: transparent; border: none; font-size: 18px; cursor: pointer;">-</button>
+            <input type="text" value="1" style="width: 40px; text-align: center; border: none; font-size: 16px; font-weight: 600; background: transparent;">
+            <button style="padding: 16px 20px; background: transparent; border: none; font-size: 18px; cursor: pointer;">+</button>
+          </div>
+          <button class="btn btn-dark" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹399</button>
+        </div>
+        
+        <!-- Accordions -->
+        <div style="border-top: 1px solid #DDD8CF;">
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;" open>
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Why You'll Love It <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                <li><strong>Just Peanuts:</strong> Truly uncompromised. If you see oil on top, that means it's real!</li>
+                <li><strong>Stone-Ground:</strong> Traditional grinding ensures maximum retention of micronutrients and flavor.</li>
+                <li><strong>Heart Healthy:</strong> Full of good fats, perfect for sustained energy with your oats.</li>
+              </ul>
+            </div>
+          </details>
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Ingredients & Nutrition <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <p><strong>Ingredients:</strong> 100% Roasted Premium Peanuts.</p>
+              <div style="background: #F8F6F2; padding: 16px; border-radius: 8px; margin-top: 16px;">
+                <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 8px;">Nutrition per 30g serving:</p>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px; margin-bottom: 4px;"><span>Calories</span><span>190 kcal</span></div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px; margin-bottom: 4px;"><span>Protein</span><span>10g</span></div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px; margin-bottom: 4px;"><span>Carbs</span><span>6g</span></div>
+                <div style="display: flex; justify-content: space-between; padding-bottom: 4px; margin-bottom: 4px;"><span>Fat</span><span>15g</span></div>
+              </div>
+            </div>
+          </details>
+        </div>
       </div>
     </div>
-
-    <div class="prod-card">
-      <a href="product-bar.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=400&q=80&auto=format&fit=crop" alt="9AM Protein Bar" style="border-radius:12px" /></a>
-      <div class="prod-body">
-        <div class="prod-top"><div><a href="product-bar.html" style="text-decoration: none;"><h3 style="margin-bottom:2px">9AM Protein Bar</h3></a><p class="prod-tagline">Fuel, not a treat</p></div><span class="badge">30g Protein</span></div>
-        <div class="divider"></div>
-        <div class="prod-ingredients"><span>Real Cocoa</span><span>Whey Protein</span><span>Oats</span><span>No Maltitol</span></div>
-        <div class="prod-why-block"><p class="prod-why-title">Why this works</p><ul class="prod-why-list"><li>Tastes like a reward, works like fuel</li><li>No sugar alcohols or artificial junk</li><li>Perfect pre-workout or desk snack</li></ul></div>
-        <div class="prod-bottom"><span class="prod-price">₹149</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
-      </div>
-    </div>
-
-    <div class="prod-card">
-      <a href="product-pb.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1612187209234-1c7a8f377ba4?w=400&q=80&auto=format&fit=crop" alt="Stone-Ground PB" style="border-radius:12px" /></a>
-      <div class="prod-body">
-        <div class="prod-top"><div><a href="product-pb.html" style="text-decoration: none;"><h3 style="margin-bottom:2px">Stone-Ground PB</h3></a><p class="prod-tagline">One ingredient. Zero compromise.</p></div><span class="badge">10g Protein</span></div>
-        <div class="divider"></div>
-        <div class="prod-ingredients"><span>Peanuts</span><span>That's it.</span></div>
-        <div class="prod-why-block"><p class="prod-why-title">Why this works</p><ul class="prod-why-list"><li>No palm oil, no added sugar, no emulsifiers</li><li>Pairs with everything in the system</li><li>The base of your 9 AM ritual</li></ul></div>
-        <div class="prod-bottom"><span class="prod-price">₹399</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
-      </div>
-    </div>
-
   </div>
-</div>
 </section>
 
-<!-- FOOTER -->
+<!-- You might also like section -->
+<section style="padding: 80px 0; background: #FAF9F6; border-top: 1px solid #DDD8CF;">
+  <div class="ctn">
+    <h3 style="font-size: 32px; margin-bottom: 40px; text-align: center;">You May Also Like</h3>
+    <div style="display: flex; gap: 20px; overflow-x: auto; padding-bottom: 24px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;" class="ymal-scroll">
+      
+    <div class="prod-card" style="min-width: 280px; flex: 1 0 auto; scroll-snap-align: start;">
+      <a href="product-bowl.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=400&q=80&auto=format&fit=crop" alt="Mango Oats" style="border-radius:12px" /></a>
+      <div class="prod-body">
+        <div class="prod-top"><div style="flex:1"><a href="product-bowl.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mango Oats</h3></a><p class="prod-tagline">Focus Breakfast</p></div><span class="badge">18g Protein</span></div>
+        <div class="divider"></div>
+        <div class="prod-ingredients"><span>Mango</span><span>Oats</span><span>Seeds</span><span>Ragi</span></div>
+        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
+      </div>
+    </div>
+
+    <div class="prod-card" style="min-width: 280px; flex: 1 0 auto; scroll-snap-align: start;">
+      <a href="product-bar.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=400&q=80&auto=format&fit=crop" alt="9AM Protein Bar" style="border-radius:12px" /></a>
+      <div class="prod-body">
+        <div class="prod-top"><div style="flex:1"><a href="product-bar.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">9AM Protein Bar</h3></a><p class="prod-tagline">Fuel, not a treat</p></div><span class="badge">30g Protein</span></div>
+        <div class="divider"></div>
+        <div class="prod-ingredients"><span>Real Cocoa</span><span>Whey Protein</span><span>Oats</span></div>
+        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹149</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+<style>
+.ymal-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.ymal-scroll::-webkit-scrollbar-track {
+  background: #EAE6DF;
+  border-radius: 4px;
+}
+.ymal-scroll::-webkit-scrollbar-thumb {
+  background: #C8A27A;
+  border-radius: 4px;
+}
+</style>
+
 <footer class="footer">
 <div class="ctn">
   <div class="footer-top">
@@ -288,10 +391,9 @@ h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
   </div>
 </div>
 </footer>
-
 <script>
 // Tracker
-!function(){var g=document.getElementById('tracker');if(g){for(var i=0;i<30;i++){var c=document.createElement('div');c.className='tracker-cell '+(i<18?'filled':'empty');g.appendChild(c)}}}();
+!function(){var g=document.getElementById('tracker');for(var i=0;i<30;i++){var c=document.createElement('div');c.className='tracker-cell '+(i<18?'filled':'empty');g.appendChild(c)}}();
 // Scroll reveal
 !function(){var els=document.querySelectorAll('.reveal');var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}})},{threshold:.1});els.forEach(function(el){obs.observe(el)})}();
 </script>

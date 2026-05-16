@@ -27,7 +27,10 @@ export default defineConfig(({mode}) => {
           products: path.resolve(__dirname, 'products.html'),
           system: path.resolve(__dirname, 'system.html'),
           subscribe: path.resolve(__dirname, 'subscribe.html'),
-          about: path.resolve(__dirname, 'about.html')
+          about: path.resolve(__dirname, 'about.html'),
+          product_bowl: path.resolve(__dirname, 'product-bowl.html'),
+          product_bar: path.resolve(__dirname, 'product-bar.html'),
+          product_pb: path.resolve(__dirname, 'product-pb.html')
         }
       }
     }
