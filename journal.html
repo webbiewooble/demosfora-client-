@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>9AM — Own Your Morning</title>
-<meta name="description" content="A disciplined lifestyle system built around your 9 AM routine. No sugar. No shortcuts. Real nutrition." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9 AM Journal | The 9 AM Co.</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{background:#F8F6F2;color:#1A1A1A;font-family:'DM Sans',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -189,10 +186,116 @@ h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
 .footer-socials{display:flex;gap:16px}
 .footer-socials a{color:#8A8A8A;transition:color .2s}
 .footer-socials a:hover{color:#1A1A1A}
-.page-offset { padding-top: 140px !important; }
+</style>
+<style>
+/* Journal Hero */
+.journal-hero {
+  padding: 160px 0 80px;
+  background: #EAE6DF;
+  text-align: center;
+}
+.journal-hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: min(48px, 10vw);
+  margin-bottom: 24px;
+  color: #1A1A1A;
+}
+.journal-hero p {
+  color: #4A4A4A;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Journal Grid */
+.journal-list {
+  padding: 80px 0;
+  display: grid;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+  .journal-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.journal-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #F8F6F2;
+  border: 1px solid #DDD8CF;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+}
+
+.journal-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background-color: #Eae6df;
+}
+
+.journal-content {
+  padding: 24px;
+}
+
+.journal-meta {
+  font-size: 13px;
+  color: #8A8A8A;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.journal-title {
+  font-size: 24px;
+  font-family: 'DM Serif Display', serif;
+  margin-bottom: 12px;
+  color: #1A1A1A;
+  line-height: 1.2;
+}
+
+.journal-excerpt {
+  font-size: 15px;
+  color: #4A4A4A;
+  line-height: 1.6;
+}
+
+.featured-article {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+@media(min-width: 768px) {
+  .featured-article {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+.featured-article .journal-content {
+  padding: 40px;
+}
+
+.featured-article .journal-title {
+  font-size: 36px;
+}
 </style>
 </head>
-<body>
+<body style="background:#FAF9F6">
+
 <nav class="nav-9am">
 <div class="ctn nav-inner">
   <a href="index.html" class="nav-logo">9AM</a>
@@ -216,157 +319,98 @@ h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
   <a href="subscribe.html" onclick="this.parentElement.classList.remove('open')">Subscribe</a>
   <a href="journal.html" onclick="this.parentElement.classList.remove('open')">9 AM Journal</a>
   <a href="about.html" onclick="this.parentElement.classList.remove('open')">About</a>
+  <a href="subscribe.html" class="btn btn-dark" style="margin-top:16px;width:100%">Start Your 9 AM Routine</a>
 </div>
 </nav>
 
-<section class="section page-offset" style="padding-top: 140px; padding-bottom: 80px; background: #FAF9F6;">
+<section class="journal-hero reveal">
   <div class="ctn">
-    <!-- Breadcrumbs -->
-    <nav style="margin-bottom: 24px; font-size: 13px; color: #8A8A8A;">
-      <a href="index.html" style="color: inherit; text-decoration: none;">Home</a> <span style="margin: 0 8px;">/</span> 
-      <a href="products.html" style="color: inherit; text-decoration: none;">Products</a> <span style="margin: 0 8px;">/</span> 
-      <span style="color: #1A1A1A;">9AM Protein Bar</span>
-    </nav>
-    
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;" class="product-layout">
-      <!-- Left: Image Gallery -->
-      <div style="position: sticky; top: 120px;">
-        <div style="border-radius: 20px; overflow: hidden; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
-          <img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=1000&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover; display: block;" alt="9AM Protein Bar">
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 12px;">
-          <div style="border-radius: 12px; overflow: hidden; border: 2px solid #C8A27A; cursor: pointer;"><img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
-          <div style="border-radius: 12px; overflow: hidden; border: 2px solid transparent; opacity: 0.7; cursor: pointer;"><img src="https://images.unsplash.com/photo-1548685121-789a7fb3bddd?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
-        </div>
-      </div>
-      
-      <!-- Right: Product Info -->
-      <div style="padding-bottom: 40px;">
-        <!-- Reviews -->
-        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
-          <div style="color: #FFB800; display: flex; gap: 2px;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <span style="font-size: 14px; color: #8A8A8A;">(85 Reviews)</span>
-        </div>
-        
-        <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">9AM Protein Bar</h1>
-        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Double Chocolate | Net Weight: 60g | Servings: 1</p>
-        
-        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 32px;">
-          <span style="font-family:'DM Serif Display'; font-size: 32px; color: #1A1A1A;">₹149</span>
-          <span style="font-size: 18px; color: #8A8A8A; text-decoration: line-through;">₹175</span>
-          <span style="background: #C8A27A; color: #fff; font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 4px; text-transform: uppercase;">Save 14%</span>
-        </div>
-        
-        <p style="margin-bottom:24px; color:#1A1A1A; font-size:16px; line-height: 1.6;">
-          Tastes like a reward, works like fuel. Packed with real ingredients and 30g of protein, this is the uncompromising bar for when you are on the move.
-        </p>
+    <h1>9 AM Journal</h1>
+    <p>Thoughts, research, and strategies for building a discipline that sticks, starting at 9 AM.</p>
+  </div>
+</section>
 
-        <!-- Options -->
-        <div style="margin-bottom: 32px;">
-          <p style="font-size: 14px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">Select Pack Size:</p>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <div style="border: 2px solid #1A1A1A; border-radius: 8px; padding: 12px 20px; cursor: pointer; text-align: center; background: #fff;">
-              <div style="font-weight: 600; font-size: 15px;">Single Bar</div>
-              <div style="color: #8A8A8A; font-size: 13px;">₹149</div>
-            </div>
-            <div style="border: 1px solid #DDD8CF; border-radius: 8px; padding: 12px 20px; cursor: pointer; text-align: center; background: #fff;">
-              <div style="font-weight: 600; font-size: 15px;">Box of 6</div>
-              <div style="color: #8A8A8A; font-size: 13px;">₹799 <span style="color:#C8A27A;">(Save 10%)</span></div>
-            </div>
-            <div style="border: 1px solid #DDD8CF; border-radius: 8px; padding: 12px 20px; cursor: pointer; text-align: center; background: #fff;">
-              <div style="font-weight: 600; font-size: 15px;">Box of 12</div>
-              <div style="color: #8A8A8A; font-size: 13px;">₹1,499 <span style="color:#C8A27A;">(Save 16%)</span></div>
-            </div>
-          </div>
+<section class="reveal">
+  <div class="ctn">
+    <div class="journal-list">
+      
+      <!-- Featured Article -->
+      <a href="#" class="journal-card featured-article">
+        <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=1000" class="journal-img" alt="Notebook and coffee">
+        <div class="journal-content">
+          <div class="journal-meta">Mindset • 5 min read</div>
+          <h2 class="journal-title">The Myth of "I'm Not a Morning Person"</h2>
+          <p class="journal-excerpt">We unpack the science behind circadian rhythms and why your morning routine is broken, not your biology. Discover the small tweaks that can make 9 AM your most productive hour.</p>
         </div>
-        
-        <!-- Add to cart -->
-        <div style="display: flex; gap: 16px; margin-bottom: 40px;">
-          <div style="display: flex; border: 1px solid #1A1A1A; border-radius: 8px; overflow: hidden; background:#fff;">
-            <button style="padding: 16px 20px; background: transparent; border: none; font-size: 18px; cursor: pointer;">-</button>
-            <input type="text" value="1" style="width: 40px; text-align: center; border: none; font-size: 16px; font-weight: 600; background: transparent;">
-            <button style="padding: 16px 20px; background: transparent; border: none; font-size: 18px; cursor: pointer;">+</button>
-          </div>
-          <button class="btn btn-dark" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹149</button>
+      </a>
+
+      <!-- Standard Articles -->
+      <a href="#" class="journal-card">
+        <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&q=80&w=600" class="journal-img" alt="Preparation">
+        <div class="journal-content">
+          <div class="journal-meta">Nutrition • 4 min read</div>
+          <h2 class="journal-title">Why Refined Sugar Ruins Your Focus</h2>
+          <p class="journal-excerpt">Exploring the connection between what you eat for breakfast and how long you can sustain deep work throughout the morning without crashing.</p>
         </div>
-        
-        <!-- Accordions -->
-        <div style="border-top: 1px solid #DDD8CF;">
-          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;" open>
-            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              Why You'll Love It <span style="font-size: 24px; font-weight: 300;">+</span>
-            </summary>
-            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
-              <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
-                <li><strong>30g Protein:</strong> Maximum muscle recovery and satiety in a single bar.</li>
-                <li><strong>No Junk:</strong> We hate sugar alcohols and maltitol. We use real cocoa and stevia.</li>
-                <li><strong>Perfect Texture:</strong> Soft, chewy interior with a satisfying crunchy coating.</li>
-              </ul>
-            </div>
-          </details>
-          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
-            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              Ingredients & Nutrition <span style="font-size: 24px; font-weight: 300;">+</span>
-            </summary>
-            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
-              <p><strong>Ingredients:</strong> Whey Protein Blend, Oats, Real Cocoa Butter, Almond Butter, Prebiotic Fiber, Cocoa Powder, Stevia Extract.</p>
-              <div style="background: #F8F6F2; padding: 16px; border-radius: 8px; margin-top: 16px;">
-                <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 8px;">Nutrition per 60g bar:</p>
-                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px; margin-bottom: 4px;"><span>Calories</span><span>240 kcal</span></div>
-                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px; margin-bottom: 4px;"><span>Protein</span><span>30g</span></div>
-                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px; margin-bottom: 4px;"><span>Carbs</span><span>20g</span></div>
-                <div style="display: flex; justify-content: space-between; padding-bottom: 4px; margin-bottom: 4px;"><span>Fat</span><span>8g</span></div>
-              </div>
-            </div>
-          </details>
+      </a>
+
+      <a href="#" class="journal-card">
+        <img src="https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?auto=format&fit=crop&q=80&w=600" class="journal-img" alt="Running path">
+        <div class="journal-content">
+          <div class="journal-meta">Lifestyle • 3 min read</div>
+          <h2 class="journal-title">Stacking Habits: Exercise Before 9 AM</h2>
+          <p class="journal-excerpt">How combining your morning oats with a simple 15-minute movement routine can double your energy levels before you even sit at your desk.</p>
         </div>
-      </div>
+      </a>
+
+      <a href="#" class="journal-card">
+        <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&q=80&w=600" class="journal-img" alt="Healthy ingredients">
+        <div class="journal-content">
+          <div class="journal-meta">Ingredients • 6 min read</div>
+          <h2 class="journal-title">Oats, Ragi, and the Power of Complex Carbs</h2>
+          <p class="journal-excerpt">Not all carbs are created equal. A deep dive into the slow-release energy profile of our core ingredients and why they are essential for your daily fuel.</p>
+        </div>
+      </a>
+
+      <a href="#" class="journal-card">
+        <img src="https://images.unsplash.com/photo-1522845015757-50bce044e5da?auto=format&fit=crop&q=80&w=600" class="journal-img" alt="Focus work">
+        <div class="journal-content">
+          <div class="journal-meta">Productivity • 5 min read</div>
+          <h2 class="journal-title">Designing Your Environment for Deep Work</h2>
+          <p class="journal-excerpt">Your environment dictates your focus. How to clear the physical and mental clutter before 9 AM so you can execute your highest priorities effortlessly.</p>
+        </div>
+      </a>
+
+      <a href="#" class="journal-card">
+        <img src="https://images.unsplash.com/photo-1517404215738-15263e9f9178?auto=format&fit=crop&q=80&w=600" class="journal-img" alt="Journaling">
+        <div class="journal-content">
+          <div class="journal-meta">Habits • 4 min read</div>
+          <h2 class="journal-title">Why We Track: The Psychology of Streaks</h2>
+          <p class="journal-excerpt">Consistency isn't about willpower. It's about visible progress. Learn why keeping a simple daily tracker card can revolutionize your morning routine.</p>
+        </div>
+      </a>
+
+      <a href="#" class="journal-card">
+        <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?auto=format&fit=crop&q=80&w=600" class="journal-img" alt="Protein power">
+        <div class="journal-content">
+          <div class="journal-meta">Nutrition • 7 min read</div>
+          <h2 class="journal-title">The Breakfast Protein Rule</h2>
+          <p class="journal-excerpt">Why hitting simply 30g of protein in your first meal of the day is the single most important dietary change you can make for focus and muscle maintenance.</p>
+        </div>
+      </a>
+
     </div>
   </div>
 </section>
 
-<!-- You might also like section -->
-<section style="padding: 80px 0; background: #FAF9F6; border-top: 1px solid #DDD8CF;">
+<!-- Call to action -->
+<section style="padding: 100px 0; background: #1A1A1A; color: #F8F6F2; text-align: center;" class="reveal">
   <div class="ctn">
-    <h3 style="font-size: 32px; margin-bottom: 40px; text-align: center;">You May Also Like</h3>
-    <div class="prod-grid ymal-custom-grid">
-      
-    <div class="prod-card">
-      <a href="product-bowl.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=400&q=80&auto=format&fit=crop" alt="Mango Oats" style="border-radius:12px" /></a>
-      <div class="prod-body">
-        <div class="prod-top"><div style="flex:1"><a href="product-bowl.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mango Oats</h3></a><p class="prod-tagline">Focus Breakfast</p></div><span class="badge">18g Protein</span></div>
-        <div class="divider"></div>
-        <div class="prod-ingredients"><span>Mango</span><span>Oats</span><span>Seeds</span><span>Ragi</span></div>
-        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
-      </div>
-    </div>
-
-    <div class="prod-card">
-      <a href="product-pb.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1612187209234-1c7a8f377ba4?w=400&q=80&auto=format&fit=crop" alt="Stone-Ground PB" style="border-radius:12px" /></a>
-      <div class="prod-body">
-        <div class="prod-top"><div style="flex:1"><a href="product-pb.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Stone-Ground PB</h3></a><p class="prod-tagline">One ingredient</p></div><span class="badge">10g Protein</span></div>
-        <div class="divider"></div>
-        <div class="prod-ingredients"><span>Peanuts</span><span>That's it.</span></div>
-        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹399</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
-      </div>
-    </div>
-
-    </div>
+    <h2 style="font-family: 'DM Serif Display', serif; font-size: min(40px, 8vw); margin-bottom: 24px;">Don't leave your mornings to chance.</h2>
+    <p style="color: rgba(255,255,255,0.7); font-size: 18px; margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto;">Get your first box delivered this week and take control of your 9 AM.</p>
+    <a href="subscribe.html" class="btn btn-accent" style="padding: 16px 36px; font-size: 16px;">Start the System</a>
   </div>
 </section>
-<style>
-.ymal-custom-grid {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  max-width: 800px;
-  margin: 0 auto;
-}
-</style>
 
 <footer class="footer">
 <div class="ctn">
@@ -393,10 +437,22 @@ h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
 </div>
 </footer>
 <script>
-// Tracker
-!function(){var g=document.getElementById('tracker');for(var i=0;i<30;i++){var c=document.createElement('div');c.className='tracker-cell '+(i<18?'filled':'empty');g.appendChild(c)}}();
-// Scroll reveal
-!function(){var els=document.querySelectorAll('.reveal');var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}})},{threshold:.1});els.forEach(function(el){obs.observe(el)})}();
+  // Simple reveal animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('.reveal').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+    observer.observe(el);
+  });
 </script>
 </body>
 </html>
