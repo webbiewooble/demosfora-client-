@@ -170,7 +170,7 @@ createPage('product-bowl.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="onetime" checked>
-                One-Time Purchase
+                One-Time Order
               </div>
               <span>₹499</span>
             </div>
@@ -182,7 +182,7 @@ createPage('product-bowl.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="7day">
-                7-Day Pack Bundle
+                7-Day Starter Pack
               </div>
               <span>₹3483</span>
             </div>
@@ -194,7 +194,7 @@ createPage('product-bowl.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="30day">
-                30-Day Pack Bundle
+                30-Day Monthly Pack <span style="background:#1A1A1A;color:#fff;font-size:10px;padding:2px 6px;border-radius:4px;margin-left:8px;font-weight:600;display:inline-block;">Most Popular</span>
               </div>
               <span>₹14945</span>
             </div>
@@ -206,7 +206,7 @@ createPage('product-bowl.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="custom">
-                Custom Subscription
+                Build Your Custom Plan
               </div>
               <span id="custom-price-display">₹499</span>
             </div>
@@ -241,7 +241,7 @@ createPage('product-bowl.html', `
             <input type="text" id="global-qty" value="1" style="width: 40px; text-align: center; border: none; font-size: 16px; font-weight: 600; background: transparent;" readonly>
             <button style="padding: 16px 20px; background: transparent; border: none; font-size: 18px; cursor: pointer; height: 100%;" onclick="changeGlobalQty(1)">+</button>
           </div>
-          <button id="main-add-btn" class="btn btn-dark" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹499</button>
+          <button id="main-add-btn" class="btn btn-dark" onclick="handleAddToCart()" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹499</button>
         </div>
 
         <script>
@@ -333,6 +333,28 @@ createPage('product-bowl.html', `
             let finalTotal = window.currentTotal * globalQty;
             let text = window.isCustom ? "Subscribe Now" : "Add to Cart";
             els.mainAddBtn.innerText = text + " - ₹" + finalTotal;
+          }
+
+          window.handleAddToCart = function() {
+              let freq = "";
+              if (window.isCustom) {
+                  freq = document.getElementById('custom-freq').value;
+              }
+              const qty = document.getElementById('global-qty').value;
+              
+              const optionRadio = Array.from(document.querySelectorAll('.po-radio')).find(r => r.checked);
+              const optionType = optionRadio ? optionRadio.value : 'onetime';
+              
+              const msg = 'Added to cart! \n\nType: ' + optionType + '\nTotal: ₹' + (window.currentTotal * qty) + '\n- Bundle discounts applied at checkout -\n\n(Manage subscriptions from your account section)';
+              alert(msg);
+          }
+
+                        const qty = document.getElementById('global-qty').value;
+              
+              const optionRadio = Array.from(document.querySelectorAll('.po-radio')).find(r => r.checked);
+              const optionType = optionRadio ? optionRadio.value : 'onetime';
+              
+              const msg = 'Added to cart! \nType: ' + optionType + '\nTotal: ₹' + (window.currentTotal * qty) + '\n- Bundle discounts applied at checkout -\n\n(Manage subscriptions from your account section)'; alert(msg);
           }
         </script>
 
@@ -678,7 +700,7 @@ createPage('product-bar.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="onetime" checked>
-                One-Time Purchase
+                One-Time Order
               </div>
               <span>₹149</span>
             </div>
@@ -690,7 +712,7 @@ createPage('product-bar.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="7day">
-                7-Day Pack Bundle
+                7-Day Starter Pack
               </div>
               <span>₹1033</span>
             </div>
@@ -702,7 +724,7 @@ createPage('product-bar.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="30day">
-                30-Day Pack Bundle
+                30-Day Monthly Pack <span style="background:#1A1A1A;color:#fff;font-size:10px;padding:2px 6px;border-radius:4px;margin-left:8px;font-weight:600;display:inline-block;">Most Popular</span>
               </div>
               <span>₹4445</span>
             </div>
@@ -714,7 +736,7 @@ createPage('product-bar.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="custom">
-                Custom Subscription
+                Build Your Custom Plan
               </div>
               <span id="custom-price-display">₹149</span>
             </div>
@@ -749,7 +771,7 @@ createPage('product-bar.html', `
             <input type="text" id="global-qty" value="1" style="width: 40px; text-align: center; border: none; font-size: 16px; font-weight: 600; background: transparent;" readonly>
             <button style="padding: 16px 20px; background: transparent; border: none; font-size: 18px; cursor: pointer; height: 100%;" onclick="changeGlobalQty(1)">+</button>
           </div>
-          <button id="main-add-btn" class="btn btn-dark" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹149</button>
+          <button id="main-add-btn" class="btn btn-dark" onclick="handleAddToCart()" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹149</button>
         </div>
 
         <script>
@@ -841,6 +863,28 @@ createPage('product-bar.html', `
             let finalTotal = window.currentTotal * globalQty;
             let text = window.isCustom ? "Subscribe Now" : "Add to Cart";
             els.mainAddBtn.innerText = text + " - ₹" + finalTotal;
+          }
+
+          window.handleAddToCart = function() {
+              let freq = "";
+              if (window.isCustom) {
+                  freq = document.getElementById('custom-freq').value;
+              }
+              const qty = document.getElementById('global-qty').value;
+              
+              const optionRadio = Array.from(document.querySelectorAll('.po-radio')).find(r => r.checked);
+              const optionType = optionRadio ? optionRadio.value : 'onetime';
+              
+              const msg = 'Added to cart! \n\nType: ' + optionType + '\nTotal: ₹' + (window.currentTotal * qty) + '\n- Bundle discounts applied at checkout -\n\n(Manage subscriptions from your account section)';
+              alert(msg);
+          }
+
+                        const qty = document.getElementById('global-qty').value;
+              
+              const optionRadio = Array.from(document.querySelectorAll('.po-radio')).find(r => r.checked);
+              const optionType = optionRadio ? optionRadio.value : 'onetime';
+              
+              const msg = 'Added to cart! \nType: ' + optionType + '\nTotal: ₹' + (window.currentTotal * qty) + '\n- Bundle discounts applied at checkout -\n\n(Manage subscriptions from your account section)'; alert(msg);
           }
         </script>
 
@@ -1066,7 +1110,7 @@ createPage('product-pb.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="onetime" checked>
-                One-Time Purchase
+                One-Time Order
               </div>
               <span>₹399</span>
             </div>
@@ -1078,7 +1122,7 @@ createPage('product-pb.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="7day">
-                7-Day Pack Bundle
+                7-Day Starter Pack
               </div>
               <span>₹2783</span>
             </div>
@@ -1090,7 +1134,7 @@ createPage('product-pb.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="30day">
-                30-Day Pack Bundle
+                30-Day Monthly Pack <span style="background:#1A1A1A;color:#fff;font-size:10px;padding:2px 6px;border-radius:4px;margin-left:8px;font-weight:600;display:inline-block;">Most Popular</span>
               </div>
               <span>₹11945</span>
             </div>
@@ -1102,7 +1146,7 @@ createPage('product-pb.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="custom">
-                Custom Subscription
+                Build Your Custom Plan
               </div>
               <span id="custom-price-display">₹399</span>
             </div>
@@ -1137,7 +1181,7 @@ createPage('product-pb.html', `
             <input type="text" id="global-qty" value="1" style="width: 40px; text-align: center; border: none; font-size: 16px; font-weight: 600; background: transparent;" readonly>
             <button style="padding: 16px 20px; background: transparent; border: none; font-size: 18px; cursor: pointer; height: 100%;" onclick="changeGlobalQty(1)">+</button>
           </div>
-          <button id="main-add-btn" class="btn btn-dark" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹399</button>
+          <button id="main-add-btn" class="btn btn-dark" onclick="handleAddToCart()" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹399</button>
         </div>
 
         <script>
@@ -1229,6 +1273,28 @@ createPage('product-pb.html', `
             let finalTotal = window.currentTotal * globalQty;
             let text = window.isCustom ? "Subscribe Now" : "Add to Cart";
             els.mainAddBtn.innerText = text + " - ₹" + finalTotal;
+          }
+
+          window.handleAddToCart = function() {
+              let freq = "";
+              if (window.isCustom) {
+                  freq = document.getElementById('custom-freq').value;
+              }
+              const qty = document.getElementById('global-qty').value;
+              
+              const optionRadio = Array.from(document.querySelectorAll('.po-radio')).find(r => r.checked);
+              const optionType = optionRadio ? optionRadio.value : 'onetime';
+              
+              const msg = 'Added to cart! \n\nType: ' + optionType + '\nTotal: ₹' + (window.currentTotal * qty) + '\n- Bundle discounts applied at checkout -\n\n(Manage subscriptions from your account section)';
+              alert(msg);
+          }
+
+                        const qty = document.getElementById('global-qty').value;
+              
+              const optionRadio = Array.from(document.querySelectorAll('.po-radio')).find(r => r.checked);
+              const optionType = optionRadio ? optionRadio.value : 'onetime';
+              
+              const msg = 'Added to cart! \nType: ' + optionType + '\nTotal: ₹' + (window.currentTotal * qty) + '\n- Bundle discounts applied at checkout -\n\n(Manage subscriptions from your account section)'; alert(msg);
           }
         </script>
 
