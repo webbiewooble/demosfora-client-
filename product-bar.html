@@ -373,29 +373,19 @@ h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
             <div class="po-desc">Standard add to cart.</div>
           </label>
 
-          <!-- Option 2: 7-Day Pack -->
-          <label class="po-card" onclick="updatePrice(7, 1033, 10, this)">
+          <!-- Option 2: 5-Day Pack -->
+          <label class="po-card" onclick="updatePrice(5, 735, 10, this)">
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
-                <input type="radio" name="purchase_option" class="po-radio" value="7day">
-                7-Day Starter Pack
+                <input type="radio" name="purchase_option" class="po-radio" value="5day">
+                5-Day Starter Pack
               </div>
-              <span>₹1033</span>
+              <span>₹735</span>
             </div>
-            <div class="po-desc">7 packets together. <span class="po-tag">Save ₹10 on 7-Day Pack</span></div>
+            <div class="po-desc">5 packets together. <span class="po-tag">Save ₹10 on 5-Day Pack</span></div>
           </label>
 
-          <!-- Option 3: 30-Day Pack -->
-          <label class="po-card" onclick="updatePrice(30, 4445, 25, this)">
-            <div class="po-header">
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <input type="radio" name="purchase_option" class="po-radio" value="30day">
-                30-Day Monthly Pack <span style="background:#1A1A1A;color:#fff;font-size:10px;padding:2px 6px;border-radius:4px;margin-left:8px;font-weight:600;display:inline-block;">Most Popular</span>
-              </div>
-              <span>₹4445</span>
-            </div>
-            <div class="po-desc">30 packets together. <span class="po-tag">Save ₹25 on Monthly Pack</span></div>
-          </label>
+          
 
           <!-- Option 4: Custom Sub -->
           <label class="po-card" onclick="updateCustomPrice(this)">
@@ -580,28 +570,58 @@ Total: ₹' + (window.currentTotal * qty) + '
               </ul>
             </div>
           </details>
-          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
-            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              Ingredients & Nutrition <span style="font-size: 24px; font-weight: 300;">+</span>
-            </summary>
-            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
-              <p><strong>Ingredients:</strong> Whey Protein Blend, Oats, Real Cocoa Butter, Almond Butter, Prebiotic Fiber, Cocoa Powder, Stevia Extract.</p>
-              <div style="background: #F8F6F2; padding: 16px; border-radius: 8px; margin-top: 16px;">
-                <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 8px;">Nutrition per 60g bar:</p>
-                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px; margin-bottom: 4px;"><span>Calories</span><span>240 kcal</span></div>
-                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px; margin-bottom: 4px;"><span>Protein</span><span>30g</span></div>
-                <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px; margin-bottom: 4px;"><span>Carbs</span><span>20g</span></div>
-                <div style="display: flex; justify-content: space-between; padding-bottom: 4px; margin-bottom: 4px;"><span>Fat</span><span>8g</span></div>
-              </div>
-            </div>
-          </details>
+          
         </div>
       </div>
     </div>
   </div>
 </section>
 
+
+<!-- Ingredients Section -->
+<section style="padding: 80px 0; background: #fff; text-align: center;">
+  <div class="ctn">
+    <h2 style="font-size: 36px; font-weight: 800; text-transform: capitalize; margin-bottom: 48px; color: #000;">Ingredients</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+      
+      <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">WHEY<br>PROTEIN</h3>
+        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+           <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&q=80&w=300" alt="Whey Protein" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">For longer fullness and steady energy, without feeling heavy.</p>
+      </div>
+
+      <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">DATE<br>POWDER</h3>
+        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+           <img src="https://images.unsplash.com/photo-1596541603597-94420bf051c5?auto=format&fit=crop&q=80&w=300" alt="Date Powder" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Naturally sweet, nutrient-rich energy in every bite.</p>
+      </div>
+
+      <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">JAGGERY<br>POWDER</h3>
+        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+           <img src="https://images.unsplash.com/photo-1620986794689-d4da44ecfc87?auto=format&fit=crop&q=80&w=300" alt="Jaggery Powder" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Natural sweetness that gives energy, not a sugar crash.</p>
+      </div>
+
+      <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">FLAX<br>SEEDS</h3>
+        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+           <img src="https://images.unsplash.com/photo-1506456073749-d7da4073bd31?auto=format&fit=crop&q=80&w=300" alt="Flax Seeds" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">For smoother digestion and everyday gut support.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- You might also like section -->
+
 <section style="padding: 80px 0; background: #FAF9F6; border-top: 1px solid #DDD8CF;">
   <div class="ctn">
     <h3 style="font-size: 32px; margin-bottom: 40px; text-align: center;">You May Also Like</h3>
