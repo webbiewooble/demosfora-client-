@@ -29,8 +29,8 @@ export default defineConfig(({mode}) => {
           subscribe: path.resolve(__dirname, 'subscribe.html'),
           about: path.resolve(__dirname, 'about.html'),
           product_bowl: path.resolve(__dirname, 'product-bowl.html'),
-          product_bar: path.resolve(__dirname, 'product-bar.html'),
-          product_pb: path.resolve(__dirname, 'product-pb.html')
+          product_mocha: path.resolve(__dirname, 'product-mocha.html'),
+          product_pb: path.resolve(__dirname, 'product-chocolate.html')
         }
       }
     }

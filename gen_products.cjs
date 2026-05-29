@@ -20,14 +20,14 @@ createPage('product-bowl.html', `
     <nav style="margin-bottom: 24px; font-size: 13px; color: #8A8A8A;">
       <a href="index.html" style="color: inherit; text-decoration: none;">Home</a> <span style="margin: 0 8px;">/</span> 
       <a href="products.html" style="color: inherit; text-decoration: none;">Products</a> <span style="margin: 0 8px;">/</span> 
-      <span style="color: #1A1A1A;">Mango Oats</span>
+      <span style="color: #1A1A1A;">Mango Grain Oats</span>
     </nav>
     
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;" class="product-layout">
       <!-- Left: Image Gallery -->
       <div style="position: sticky; top: 120px;">
         <div style="border-radius: 20px; overflow: hidden; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
-          <img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=1000&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover; display: block;" alt="Mango Oats">
+          <img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=1000&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover; display: block;" alt="Mango Grain Oats">
         </div>
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 12px;">
           <div style="border-radius: 12px; overflow: hidden; border: 2px solid #C8A27A; cursor: pointer;"><img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
@@ -50,7 +50,7 @@ createPage('product-bowl.html', `
           <span style="font-size: 14px; color: #8A8A8A;">(128 Reviews)</span>
         </div>
         
-        <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">Mango Oats – Focus Breakfast</h1>
+        <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">Mango Grain Oats</h1>
         <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Mango | Net Weight: 350g | Servings: 5 (70g each)</p>
         
         <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 32px;">
@@ -60,7 +60,7 @@ createPage('product-bowl.html', `
         </div>
         
         <p style="margin-bottom:24px; color:#1A1A1A; font-size:16px; line-height: 1.6;">
-          A delicious blend of mango, oats, ragi, and seeds crafted for busy mornings and healthier lifestyles.
+          A quick healthy breakfast made with oats, mango powder, seeds, and ragi for stable energy and focused mornings. High in protein, high in fibre, and ready in minutes.
         </p>
 
         <div style="display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap;">
@@ -353,57 +353,73 @@ createPage('product-bowl.html', `
         <div style="border-top: 1px solid #DDD8CF;">
           <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;" open>
             <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              About Mango Oats <span style="font-size: 24px; font-weight: 300;">+</span>
+              About Mango Grain Oats <span style="font-size: 24px; font-weight: 300;">+</span>
             </summary>
             <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
-              <p style="margin-bottom: 12px; font-weight: 600; color: #1A1A1A;">Healthy Breakfast That Actually Tastes Good</p>
-              <p style="margin-bottom: 16px;">Our Mango Oats combine nutrition and flavor in one convenient breakfast solution. Made with oats, ragi, seeds, and natural mango flavor, this breakfast keeps you fuller for longer while supporting your daily energy needs.</p>
-              
-              <p style="margin-bottom: 8px; font-weight: 600; color: #1A1A1A;">Perfect for:</p>
-              <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 4px;">
-                <li>Working professionals</li>
-                <li>Fitness enthusiasts</li>
-                <li>Students</li>
-                <li>Healthy lifestyle seekers</li>
-                <li>Busy mornings</li>
+              <p style="margin-bottom: 12px; font-weight: 600; color: #1A1A1A;">Fuel Your Mornings with Mango Grain Oats</p>
+              <p style="margin-bottom: 8px;">Meet your new breakfast ritual.</p>
+              <p style="margin-bottom: 8px;">The 9 AM Co. Mango Grain Oats combines wholesome oats, mango powder, seeds, and ragi into a quick healthy breakfast designed for disciplined mornings and steady energy.</p>
+              <p style="margin-bottom: 8px;">Crafted for busy professionals, students, and fitness-focused lifestyles, this instant oats blend delivers balanced nutrition without compromising on taste.</p>
+              <p style="margin-bottom: 8px;">With 18g protein, whole grains, and no added refined sugar, Mango Grain Oats helps you stay full, focused, and energized throughout your day.</p>
+              <p>Whether you’re heading to work, class, or the gym — this is breakfast made for modern mornings.</p>
+            </div>
+          </details>
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Ingredients <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                 <li>Oats</li>
+                 <li>Mango Powder</li>
+                 <li>Seeds</li>
+                 <li>Ragi</li>
+                 <li>Whey Protein</li>
               </ul>
             </div>
           </details>
           <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
             <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              What's Inside? <span style="font-size: 24px; font-weight: 300;">+</span>
+              Why You'll Love It <span style="font-size: 24px; font-weight: 300;">+</span>
             </summary>
             <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
-              <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px;"><span>Mango</span> <strong>12%</strong></div>
-                  <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px;"><span>Oats</span> <strong>30%</strong></div>
-                  <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px;"><span>Seeds</span> <strong>5%</strong></div>
-                  <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed #DDD8CF; padding-bottom: 4px;"><span>Ragi</span> <strong>35%</strong></div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">🥭 Real Mango Flavor</p>
+                 <p>Made with mango powder for a naturally refreshing taste.</p>
               </div>
-              <p>Crafted using wholesome ingredients with balanced nutrition in every serving.</p>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">💪 18g Protein</p>
+                 <p>Supports fullness and sustained energy.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">🌾 High Fibre Breakfast</p>
+                 <p>Helps support better digestion and steady mornings.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">⚡ Stable Energy</p>
+                 <p>No heavy crashes or sugar spikes.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">⏱ Quick & Convenient</p>
+                 <p>Perfect for rushed mornings and busy schedules.</p>
+              </div>
+              <div>
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">🚫 No Added Refined Sugar</p>
+                 <p>Better breakfast choices made simple.</p>
+              </div>
             </div>
           </details>
           <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
             <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              Benefits You'll Feel <span style="font-size: 24px; font-weight: 300;">+</span>
+              Ready in Minutes <span style="font-size: 24px; font-weight: 300;">+</span>
             </summary>
             <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
-              <div style="margin-bottom: 16px;">
-                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">Steady Energy</p>
-                 <p>Whole grains help provide longer-lasting energy without sudden crashes.</p>
-              </div>
-              <div style="margin-bottom: 16px;">
-                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">High Protein</p>
-                 <p>18g protein supports active lifestyles and keeps you satisfied.</p>
-              </div>
-              <div style="margin-bottom: 16px;">
-                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">Fibre Rich</p>
-                 <p>Supports digestion and healthy eating habits.</p>
-              </div>
-              <div>
-                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">No Added Sugar</p>
-                 <p>Clean nutrition without unnecessary sweetness.</p>
-              </div>
+              <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                 <li>Add hot milk</li>
+                 <li>Stir well</li>
+                 <li>Let it sit briefly</li>
+                 <li>Enjoy your 9AM properly</li>
+              </ol>
             </div>
           </details>
           
@@ -466,7 +482,7 @@ createPage('product-bowl.html', `
       
       <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
         <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
-          <span>Is Mango Oats good for weight loss?</span>
+          <span>Is Mango Grain Oats good for weight loss?</span>
           <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
         </summary>
         <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
@@ -476,7 +492,7 @@ createPage('product-bowl.html', `
 
       <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
         <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
-          <span>Can I eat Mango Oats daily?</span>
+          <span>Can I eat Mango Grain Oats daily?</span>
           <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
         </summary>
         <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
@@ -506,7 +522,7 @@ createPage('product-bowl.html', `
 
       <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
         <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
-          <span>Can kids eat Mango Oats?</span>
+          <span>Can kids eat Mango Grain Oats?</span>
           <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
         </summary>
         <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
@@ -542,22 +558,22 @@ createPage('product-bowl.html', `
     <div class="prod-grid ymal-custom-grid">
       
     <div class="prod-card">
-      <a href="product-bar.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=400&q=80&auto=format&fit=crop" alt="9AM Protein Bar" style="border-radius:12px" /></a>
+      <a href="product-mocha.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?w=400&q=80&auto=format&fit=crop" alt="Mocha Rush Oats" style="border-radius:12px" /></a>
       <div class="prod-body">
-        <div class="prod-top"><div style="flex:1"><a href="product-bar.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">9AM Protein Bar</h3></a><p class="prod-tagline">Fuel, not a treat</p></div><span class="badge">30g Protein</span></div>
+        <div class="prod-top"><div style="flex:1"><a href="product-mocha.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mocha Rush Oats</h3></a><p class="prod-tagline">Do It Anyway.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Real Cocoa</span><span>Whey Protein</span><span>Oats</span></div>
-        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹149</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
+        <div class="prod-ingredients"><span>Coffee</span><span>Cocoa</span><span>Oats</span></div>
+        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
 
     <div class="prod-card">
-      <a href="product-pb.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1612187209234-1c7a8f377ba4?w=400&q=80&auto=format&fit=crop" alt="Stone-Ground PB" style="border-radius:12px" /></a>
+      <a href="product-chocolate.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1607914841961-75df13fd2565?w=400&q=80&auto=format&fit=crop" alt="Dark Belgian Chocolate Oats" style="border-radius:12px" /></a>
       <div class="prod-body">
-        <div class="prod-top"><div style="flex:1"><a href="product-pb.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Stone-Ground PB</h3></a><p class="prod-tagline">One ingredient</p></div><span class="badge">10g Protein</span></div>
+        <div class="prod-top"><div style="flex:1"><a href="product-chocolate.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Dark Belgian Chocolate Oats</h3></a><p class="prod-tagline">Own Your Morning.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Peanuts</span><span>That's it.</span></div>
-        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹399</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
+        <div class="prod-ingredients"><span>Cocoa</span><span>Almonds</span><span>Oats</span></div>
+        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
 
@@ -587,25 +603,26 @@ createPage('product-bowl.html', `
 
 
 // Product 2: Bar
-createPage('product-bar.html', `
+createPage('product-mocha.html', `
 <section class="section page-offset" style="padding-top: 140px; padding-bottom: 80px; background: #FAF9F6;">
   <div class="ctn">
     <!-- Breadcrumbs -->
     <nav style="margin-bottom: 24px; font-size: 13px; color: #8A8A8A;">
       <a href="index.html" style="color: inherit; text-decoration: none;">Home</a> <span style="margin: 0 8px;">/</span> 
       <a href="products.html" style="color: inherit; text-decoration: none;">Products</a> <span style="margin: 0 8px;">/</span> 
-      <span style="color: #1A1A1A;">9AM Protein Bar</span>
+      <span style="color: #1A1A1A;">Mocha Rush Oats</span>
     </nav>
     
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;" class="product-layout">
       <!-- Left: Image Gallery -->
       <div style="position: sticky; top: 120px;">
         <div style="border-radius: 20px; overflow: hidden; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
-          <img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=1000&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover; display: block;" alt="9AM Protein Bar">
+          <img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?w=1000&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover; display: block;" alt="Mocha Rush Oats">
         </div>
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 12px;">
-          <div style="border-radius: 12px; overflow: hidden; border: 2px solid #C8A27A; cursor: pointer;"><img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
-          <div style="border-radius: 12px; overflow: hidden; border: 2px solid transparent; opacity: 0.7; cursor: pointer;"><img src="https://images.unsplash.com/photo-1548685121-789a7fb3bddd?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div style="border-radius: 12px; overflow: hidden; border: 2px solid #C8A27A; cursor: pointer;"><img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div style="border-radius: 12px; overflow: hidden; border: 2px solid transparent; opacity: 0.7; cursor: pointer;"><img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div style="border-radius: 12px; overflow: hidden; border: 2px solid transparent; opacity: 0.7; cursor: pointer;"><img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
         </div>
       </div>
       
@@ -620,21 +637,31 @@ createPage('product-bar.html', `
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
-          <span style="font-size: 14px; color: #8A8A8A;">(85 Reviews)</span>
+          <span style="font-size: 14px; color: #8A8A8A;">(128 Reviews)</span>
         </div>
         
-        <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">9AM Protein Bar</h1>
-        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Double Chocolate | Net Weight: 60g | Servings: 1</p>
+        <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">Mocha Rush Oats</h1>
+        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Mocha | Net Weight: 350g | Servings: 5 (70g each)</p>
         
         <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 32px;">
-          <span style="font-family:'DM Serif Display'; font-size: 32px; color: #1A1A1A;">₹149</span>
-          <span style="font-size: 18px; color: #8A8A8A; text-decoration: line-through;">₹175</span>
-          <span style="background: #C8A27A; color: #fff; font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 4px; text-transform: uppercase;">Save 14%</span>
+          <span style="font-family:'DM Serif Display'; font-size: 32px; color: #1A1A1A;">₹499</span>
+          <span style="font-size: 18px; color: #8A8A8A; text-decoration: line-through;">₹599</span>
+          <span style="background: #C8A27A; color: #fff; font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 4px; text-transform: uppercase;">Save 16%</span>
         </div>
         
         <p style="margin-bottom:24px; color:#1A1A1A; font-size:16px; line-height: 1.6;">
-          Tastes like a reward, works like fuel. Packed with real ingredients and 30g of protein, this is the uncompromising bar for when you are on the move.
+          A high-protein breakfast blend made with oats, coffee, cocoa, seeds, and ragi. Designed for focused mornings, steady energy, and busy schedules.
         </p>
+
+        <div style="display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap;">
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">Built for Productive Mornings</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">18g Protein</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">High Fibre</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">Whole Grains</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">Whey Protein</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">Coffee & Cocoa</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">Steady Energy Support</span>
+        </div>
 
         
         <!-- Subscription & Purchase Options -->
@@ -731,25 +758,25 @@ createPage('product-bar.html', `
           <p style="font-size: 14px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">Select Purchase Option:</p>
 
           <!-- Option 1: One-Time -->
-          <label class="po-card active" onclick="updatePrice(1, 149, 0, this)">
+          <label class="po-card active" onclick="updatePrice(1, 499, 0, this)">
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="onetime" checked>
                 One-Time Order
               </div>
-              <span>₹149</span>
+              <span>₹499</span>
             </div>
             <div class="po-desc">Standard add to cart.</div>
           </label>
 
           <!-- Option 2: 5-Day Pack -->
-          <label class="po-card" onclick="updatePrice(5, 735, 10, this)">
+          <label class="po-card" onclick="updatePrice(5, 2485, 10, this)">
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="5day">
                 5-Day Starter Pack
               </div>
-              <span>₹735</span>
+              <span>₹2485</span>
             </div>
             <div class="po-desc">5 packets together. <span class="po-tag">Save ₹10 on 5-Day Pack</span></div>
           </label>
@@ -763,7 +790,7 @@ createPage('product-bar.html', `
                 <input type="radio" name="purchase_option" class="po-radio" value="custom">
                 Build Your Custom Plan
               </div>
-              <span id="custom-price-display">₹149</span>
+              <span id="custom-price-display">₹499</span>
             </div>
             <div class="po-desc">Select custom number of packets/days.</div>
             <div class="po-extra" onclick="event.stopPropagation()">
@@ -796,7 +823,7 @@ createPage('product-bar.html', `
             <input type="text" id="global-qty" value="1" style="width: 40px; text-align: center; border: none; font-size: 16px; font-weight: 600; background: transparent;" readonly>
             <button style="padding: 16px 20px; background: transparent; border: none; font-size: 18px; cursor: pointer; height: 100%;" onclick="changeGlobalQty(1)">+</button>
           </div>
-          <button id="main-add-btn" class="btn btn-dark" onclick="handleAddToCart()" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹149</button>
+          <button id="main-add-btn" class="btn btn-dark" onclick="handleAddToCart()" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹499</button>
         </div>
 
         <script>
@@ -819,8 +846,8 @@ createPage('product-bar.html', `
           }
 
           // Scope state to window to avoid redeclarations if multiple scripts tag exist (not the case here but good practice)
-          window.currentBasePrice = 149;
-          window.currentTotal = 149;
+          window.currentBasePrice = 499;
+          window.currentTotal = 499;
           window.isCustom = false;
 
           document.querySelectorAll('.po-radio').forEach(radio => {
@@ -918,20 +945,126 @@ createPage('product-bar.html', `
         <div style="border-top: 1px solid #DDD8CF;">
           <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;" open>
             <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              Why You'll Love It <span style="font-size: 24px; font-weight: 300;">+</span>
+              About Mocha Rush Oats <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <p style="margin-bottom: 12px; font-weight: 600; color: #1A1A1A;">Fuel Your Mornings with Mocha Rush Oats</p>
+              <p style="margin-bottom: 8px;">Meet your new breakfast ritual.</p>
+              <p style="margin-bottom: 8px;">The 9 AM Co. Mocha Rush Oats combines wholesome oats, mango powder, seeds, and ragi into a quick healthy breakfast designed for disciplined mornings and steady energy.</p>
+              <p style="margin-bottom: 8px;">Crafted for busy professionals, students, and fitness-focused lifestyles, this instant oats blend delivers balanced nutrition without compromising on taste.</p>
+              <p style="margin-bottom: 8px;">With 18g protein, whole grains, and no added refined sugar, Mocha Rush Oats helps you stay full, focused, and energized throughout your day.</p>
+              <p>Whether you’re heading to work, class, or the gym — this is breakfast made for modern mornings.</p>
+            </div>
+          </details>
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Ingredients <span style="font-size: 24px; font-weight: 300;">+</span>
             </summary>
             <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
               <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
-                <li><strong>30g Protein:</strong> Maximum muscle recovery and satiety in a single bar.</li>
-                <li><strong>No Junk:</strong> We hate sugar alcohols and maltitol. We use real cocoa and stevia.</li>
-                <li><strong>Perfect Texture:</strong> Soft, chewy interior with a satisfying crunchy coating.</li>
+                 <li>Oats</li>
+                 <li>Coffee</li>
+                 <li>Cocoa</li>
+                 <li>Seeds</li>
+                 <li>Ragi</li>
+                 <li>Whey Protein</li>
               </ul>
+            </div>
+          </details>
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Why You'll Love It <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">☕ Real Coffee & Cocoa</p>
+                 <p>Rich mocha flavor crafted for coffee lovers.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">💪 18g Protein</p>
+                 <p>Supports fullness and sustained energy.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">🌾 High Fibre Breakfast</p>
+                 <p>Helps support digestion and long-lasting satiety.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">⚡ Steady Energy</p>
+                 <p>Built for productive mornings without unnecessary crashes.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">⏱ Quick & Convenient</p>
+                 <p>Perfect for workdays, study sessions, and busy routines.</p>
+              </div>
+              <div>
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">🚫 No Added Refined Sugar</p>
+                 <p>Simple ingredients with better choices.</p>
+              </div>
+            </div></details>
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Ready in Minutes <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                 <li>Add hot milk</li>
+                 <li>Stir thoroughly</li>
+                 <li>Let it sit briefly</li>
+                 <li>Enjoy your 9AM properly</li>
+              </ol>
+            </div>
+          </details>
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Nutritional Information <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <p style="margin-bottom: 12px; font-weight: 600; color: #1A1A1A;">Nutritional Information (Per 75g Serve)</p>
+              <table style="width: 100%; text-align: left; border-collapse: collapse; margin-bottom: 16px;">
+                <thead>
+                  <tr style="border-bottom: 2px solid #DDD8CF;">
+                    <th style="padding: 8px 0; font-weight: 600; color: #1A1A1A;">Nutrient</th>
+                    <th style="padding: 8px 0; font-weight: 600; color: #1A1A1A; text-align: right;">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Energy</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">300 kcal</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Protein</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">18g</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Carbohydrates</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">40g</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Total Sugar</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">8g</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Total Fat</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">5.4g</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Dietary Fibre</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">7g</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Salt</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">0.45g</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </details>
           
         </div>
       </div>
     </div>
+    
   </div>
 </section>
 
@@ -951,19 +1084,19 @@ createPage('product-bar.html', `
       </div>
 
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">DATE<br>POWDER</h3>
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">COFFEE</h3>
         <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
            <img src="https://images.unsplash.com/photo-1596541603597-94420bf051c5?auto=format&fit=crop&q=80&w=300" alt="Date Powder" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Naturally sweet, nutrient-rich energy in every bite.</p>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Real coffee for focus and smooth flavor.</p>
       </div>
 
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">JAGGERY<br>POWDER</h3>
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">COCOA</h3>
         <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
            <img src="https://images.unsplash.com/photo-1620986794689-d4da44ecfc87?auto=format&fit=crop&q=80&w=300" alt="Jaggery Powder" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Natural sweetness that gives energy, not a sugar crash.</p>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Rich chocolate flavor with antioxidants.</p>
       </div>
 
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -978,6 +1111,83 @@ createPage('product-bar.html', `
   </div>
 </section>
 
+<!-- FAQ Section -->
+<section style="padding: 80px 0; background: #fff; border-top: 1px solid #DDD8CF;">
+  <div class="ctn" style="max-width: 800px;">
+    <h2 style="font-size: 48px; font-weight: 800; text-align: center; margin-bottom: 48px; letter-spacing: -0.02em;">FAQs</h2>
+    
+    <div style="display: flex; flex-direction: column; gap: 12px; font-family: 'Inter', sans-serif;" class="custom-faq-list">
+      
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Is Mocha Rush Oats good for weight loss?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, it is high in fibre and protein which helps keep you full for longer.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Can I eat Mocha Rush Oats daily?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, it is suitable as a regular healthy breakfast option.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Does it contain added sugar?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          No, this product contains no added sugar.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Is it suitable for gym diets?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, the 18g protein content makes it suitable for fitness-focused diets.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Can kids eat Mocha Rush Oats?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, it can be enjoyed by both kids and adults.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- Include CSS to rotate the arrow icon when details is open -->
+<style>
+.custom-faq-list details[open] summary .faq-icon {
+  transform: rotate(90deg);
+}
+.custom-faq-list details summary::-webkit-details-marker {
+  display:none;
+}
+.custom-faq-list .faq-icon {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+</style>
+
+
+
 <!-- You might also like section -->
 
 <section style="padding: 80px 0; background: #FAF9F6; border-top: 1px solid #DDD8CF;">
@@ -986,22 +1196,22 @@ createPage('product-bar.html', `
     <div class="prod-grid ymal-custom-grid">
       
     <div class="prod-card">
-      <a href="product-bowl.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=400&q=80&auto=format&fit=crop" alt="Mango Oats" style="border-radius:12px" /></a>
+      <a href="product-mocha.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?w=400&q=80&auto=format&fit=crop" alt="Mocha Rush Oats" style="border-radius:12px" /></a>
       <div class="prod-body">
-        <div class="prod-top"><div style="flex:1"><a href="product-bowl.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mango Oats</h3></a><p class="prod-tagline">Focus Breakfast</p></div><span class="badge">18g Protein</span></div>
+        <div class="prod-top"><div style="flex:1"><a href="product-mocha.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mocha Rush Oats</h3></a><p class="prod-tagline">Do It Anyway.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Mango</span><span>Oats</span><span>Seeds</span><span>Ragi</span></div>
+        <div class="prod-ingredients"><span>Coffee</span><span>Cocoa</span><span>Oats</span></div>
         <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
 
     <div class="prod-card">
-      <a href="product-pb.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1612187209234-1c7a8f377ba4?w=400&q=80&auto=format&fit=crop" alt="Stone-Ground PB" style="border-radius:12px" /></a>
+      <a href="product-chocolate.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1607914841961-75df13fd2565?w=400&q=80&auto=format&fit=crop" alt="Dark Belgian Chocolate Oats" style="border-radius:12px" /></a>
       <div class="prod-body">
-        <div class="prod-top"><div style="flex:1"><a href="product-pb.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Stone-Ground PB</h3></a><p class="prod-tagline">One ingredient</p></div><span class="badge">10g Protein</span></div>
+        <div class="prod-top"><div style="flex:1"><a href="product-chocolate.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Dark Belgian Chocolate Oats</h3></a><p class="prod-tagline">Own Your Morning.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Peanuts</span><span>That's it.</span></div>
-        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹399</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
+        <div class="prod-ingredients"><span>Cocoa</span><span>Almonds</span><span>Oats</span></div>
+        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
 
@@ -1015,27 +1225,41 @@ createPage('product-bar.html', `
   margin: 0 auto;
 }
 </style>
+<!-- Include CSS for the layout to be responsive -->
+<style>
+@media (max-width: 768px) {
+  .product-layout {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .product-layout > div:first-child {
+    position: static !important;
+  }
+}
+</style>
 `);
 
 // Product 3: PB
-createPage('product-pb.html', `
+createPage('product-chocolate.html', `
 <section class="section page-offset" style="padding-top: 140px; padding-bottom: 80px; background: #FAF9F6;">
   <div class="ctn">
     <!-- Breadcrumbs -->
     <nav style="margin-bottom: 24px; font-size: 13px; color: #8A8A8A;">
       <a href="index.html" style="color: inherit; text-decoration: none;">Home</a> <span style="margin: 0 8px;">/</span> 
       <a href="products.html" style="color: inherit; text-decoration: none;">Products</a> <span style="margin: 0 8px;">/</span> 
-      <span style="color: #1A1A1A;">Stone-Ground PB</span>
+      <span style="color: #1A1A1A;">Dark Belgian Chocolate Oats</span>
     </nav>
     
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;" class="product-layout">
       <!-- Left: Image Gallery -->
       <div style="position: sticky; top: 120px;">
         <div style="border-radius: 20px; overflow: hidden; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
-          <img src="https://images.unsplash.com/photo-1612187209234-1c7a8f377ba4?w=1000&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover; display: block;" alt="Stone-Ground PB">
+          <img src="https://images.unsplash.com/photo-1607914841961-75df13fd2565?w=1000&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover; display: block;" alt="Dark Belgian Chocolate Oats">
         </div>
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 12px;">
-          <div style="border-radius: 12px; overflow: hidden; border: 2px solid #C8A27A; cursor: pointer;"><img src="https://images.unsplash.com/photo-1612187209234-1c7a8f377ba4?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div style="border-radius: 12px; overflow: hidden; border: 2px solid #C8A27A; cursor: pointer;"><img src="https://images.unsplash.com/photo-1607914841961-75df13fd2565?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div style="border-radius: 12px; overflow: hidden; border: 2px solid transparent; opacity: 0.7; cursor: pointer;"><img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div style="border-radius: 12px; overflow: hidden; border: 2px solid transparent; opacity: 0.7; cursor: pointer;"><img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=200&q=80&auto=format&fit=crop" style="width:100%; aspect-ratio: 1/1; object-fit: cover;"></div>
         </div>
       </div>
       
@@ -1050,21 +1274,32 @@ createPage('product-pb.html', `
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
-          <span style="font-size: 14px; color: #8A8A8A;">(210 Reviews)</span>
+          <span style="font-size: 14px; color: #8A8A8A;">(128 Reviews)</span>
         </div>
         
-        <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">Stone-Ground Peanut Butter</h1>
-        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Roasted Unsweetened | Net Weight: 500g | Servings: 15 (30g each)</p>
+        <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">Dark Belgian Chocolate Oats</h1>
+        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Dark Chocolate | Net Weight: 350g | Servings: 5 (70g each)</p>
         
         <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 32px;">
-          <span style="font-family:'DM Serif Display'; font-size: 32px; color: #1A1A1A;">₹399</span>
-          <span style="font-size: 18px; color: #8A8A8A; text-decoration: line-through;">₹450</span>
-          <span style="background: #C8A27A; color: #fff; font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 4px; text-transform: uppercase;">Save 11%</span>
+          <span style="font-family:'DM Serif Display'; font-size: 32px; color: #1A1A1A;">₹499</span>
+          <span style="font-size: 18px; color: #8A8A8A; text-decoration: line-through;">₹599</span>
+          <span style="background: #C8A27A; color: #fff; font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 4px; text-transform: uppercase;">Save 16%</span>
         </div>
         
         <p style="margin-bottom:24px; color:#1A1A1A; font-size:16px; line-height: 1.6;">
-          One ingredient. Zero compromise. No palm oil, no added sugar, no emulsifiers. The perfect base for your 9 AM ritual, stone-ground to preserve all the natural nutrients.
+          A rich chocolate breakfast blend made with oats, real cocoa, almonds, seeds, and ragi. High in protein, high in fibre, and designed for disciplined mornings.
         </p>
+
+        <div style="display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap;">
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">High Protein Breakfast</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">Belgian Chocolate Oats</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">Whole Grain Nutrition</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">Instant Breakfast Mix</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">High Fibre Oats</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">No Added Refined Sugar</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">Made for Busy Mornings</span>
+            <span style="background: #F8F6F2; padding: 6px 12px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #1A1A1A;">Rich Cocoa Flavor</span>
+        </div>
 
         
         <!-- Subscription & Purchase Options -->
@@ -1161,25 +1396,25 @@ createPage('product-pb.html', `
           <p style="font-size: 14px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">Select Purchase Option:</p>
 
           <!-- Option 1: One-Time -->
-          <label class="po-card active" onclick="updatePrice(1, 399, 0, this)">
+          <label class="po-card active" onclick="updatePrice(1, 499, 0, this)">
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="onetime" checked>
                 One-Time Order
               </div>
-              <span>₹399</span>
+              <span>₹499</span>
             </div>
             <div class="po-desc">Standard add to cart.</div>
           </label>
 
           <!-- Option 2: 5-Day Pack -->
-          <label class="po-card" onclick="updatePrice(5, 1985, 10, this)">
+          <label class="po-card" onclick="updatePrice(5, 2485, 10, this)">
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="5day">
                 5-Day Starter Pack
               </div>
-              <span>₹1985</span>
+              <span>₹2485</span>
             </div>
             <div class="po-desc">5 packets together. <span class="po-tag">Save ₹10 on 5-Day Pack</span></div>
           </label>
@@ -1193,7 +1428,7 @@ createPage('product-pb.html', `
                 <input type="radio" name="purchase_option" class="po-radio" value="custom">
                 Build Your Custom Plan
               </div>
-              <span id="custom-price-display">₹399</span>
+              <span id="custom-price-display">₹499</span>
             </div>
             <div class="po-desc">Select custom number of packets/days.</div>
             <div class="po-extra" onclick="event.stopPropagation()">
@@ -1226,7 +1461,7 @@ createPage('product-pb.html', `
             <input type="text" id="global-qty" value="1" style="width: 40px; text-align: center; border: none; font-size: 16px; font-weight: 600; background: transparent;" readonly>
             <button style="padding: 16px 20px; background: transparent; border: none; font-size: 18px; cursor: pointer; height: 100%;" onclick="changeGlobalQty(1)">+</button>
           </div>
-          <button id="main-add-btn" class="btn btn-dark" onclick="handleAddToCart()" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹399</button>
+          <button id="main-add-btn" class="btn btn-dark" onclick="handleAddToCart()" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹499</button>
         </div>
 
         <script>
@@ -1249,8 +1484,8 @@ createPage('product-pb.html', `
           }
 
           // Scope state to window to avoid redeclarations if multiple scripts tag exist (not the case here but good practice)
-          window.currentBasePrice = 399;
-          window.currentTotal = 399;
+          window.currentBasePrice = 499;
+          window.currentTotal = 499;
           window.isCustom = false;
 
           document.querySelectorAll('.po-radio').forEach(radio => {
@@ -1348,20 +1583,127 @@ createPage('product-pb.html', `
         <div style="border-top: 1px solid #DDD8CF;">
           <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;" open>
             <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              Why You'll Love It <span style="font-size: 24px; font-weight: 300;">+</span>
+              About Dark Belgian Chocolate Oats <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <p style="margin-bottom: 12px; font-weight: 600; color: #1A1A1A;">Indulgence Meets Discipline</p>
+              <p style="margin-bottom: 8px;">Dark Belgian Chocolate Oats is proof that healthy breakfasts don't have to be boring.</p>
+              <p style="margin-bottom: 8px;">Made with wholesome oats, rich cocoa, almonds, seeds, and ragi, this high-protein breakfast delivers the perfect balance of taste and nutrition. Designed for busy mornings, it provides lasting energy, supports focus, and keeps you satisfied throughout the day.</p>
+              <p style="margin-bottom: 8px;">With 18g protein, 7g dietary fibre, and no added refined sugar, every bowl is crafted to help you build better habits without compromising on flavor.</p>
+              <p>Whether you're heading to work, preparing for classes, or simply trying to make healthier choices, Dark Belgian Chocolate Oats helps you start strong.</p>
+            </div>
+          </details>
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Ingredients <span style="font-size: 24px; font-weight: 300;">+</span>
             </summary>
             <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
               <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
-                <li><strong>Just Peanuts:</strong> Truly uncompromised. If you see oil on top, that means it's real!</li>
-                <li><strong>Stone-Ground:</strong> Traditional grinding ensures maximum retention of micronutrients and flavor.</li>
-                <li><strong>Heart Healthy:</strong> Full of good fats, perfect for sustained energy with your oats.</li>
+                 <li>Oats</li>
+                 <li>Cocoa</li>
+                 <li>Almonds</li>
+                 <li>Seeds</li>
+                 <li>Ragi</li>
+                 <li>Whey Protein</li>
               </ul>
+            </div>
+          </details>
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Why You'll Love It <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">🍫 Rich Belgian Chocolate Taste</p>
+                 <p>Made with real cocoa for a deep, satisfying chocolate flavor.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">💪 18g Protein</p>
+                 <p>Supports satiety and helps fuel productive mornings.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">🌾 High in Fibre</p>
+                 <p>Contains 7g dietary fibre to support a balanced breakfast.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">⚡ Steady Energy</p>
+                 <p>Designed to provide sustained energy throughout your morning.</p>
+              </div>
+              <div style="margin-bottom: 16px;">
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">🌰 Real Almonds</p>
+                 <p>Added crunch and wholesome nutrition in every serving.</p>
+              </div>
+              <div>
+                 <p style="font-weight: 600; color: #1A1A1A; margin-bottom: 4px;">🚫 No Added Refined Sugar</p>
+                 <p>A better breakfast choice without unnecessary ingredients.</p>
+              </div>
+            </div></details>
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Ready in Minutes <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                 <li>Add hot milk</li>
+                 <li>Stir thoroughly</li>
+                 <li>Let it sit briefly</li>
+                 <li>Enjoy your 9AM properly</li>
+              </ol>
+            </div>
+          </details>
+
+          
+          <details style="padding: 24px 0; border-bottom: 1px solid #DDD8CF;">
+            <summary style="font-weight: 600; font-size: 18px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Nutritional Information <span style="font-size: 24px; font-weight: 300;">+</span>
+            </summary>
+            <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
+              <p style="margin-bottom: 12px; font-weight: 600; color: #1A1A1A;">Nutritional Information (Per 75g Serve)</p>
+              <table style="width: 100%; text-align: left; border-collapse: collapse; margin-bottom: 16px;">
+                <thead>
+                  <tr style="border-bottom: 2px solid #DDD8CF;">
+                    <th style="padding: 8px 0; font-weight: 600; color: #1A1A1A;">Nutrient</th>
+                    <th style="padding: 8px 0; font-weight: 600; color: #1A1A1A; text-align: right;">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Energy</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">300 kcal</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Protein</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">18g</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Carbohydrates</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">40g</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Total Sugar</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">8g</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Total Fat</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">5.4g</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Dietary Fibre</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">7g</td>
+                  </tr>
+                  <tr style="border-bottom: 1px dashed #DDD8CF;">
+                    <td style="padding: 8px 0;">Salt</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600;">0.45g</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </details>
           
         </div>
       </div>
     </div>
+    
   </div>
 </section>
 
@@ -1381,11 +1723,11 @@ createPage('product-pb.html', `
       </div>
 
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">DATE<br>POWDER</h3>
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">COCOA<br>POWDER</h3>
         <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
            <img src="https://images.unsplash.com/photo-1596541603597-94420bf051c5?auto=format&fit=crop&q=80&w=300" alt="Date Powder" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Naturally sweet, nutrient-rich energy in every bite.</p>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Rich chocolate flavor with antioxidants.</p>
       </div>
 
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1408,6 +1750,83 @@ createPage('product-pb.html', `
   </div>
 </section>
 
+<!-- FAQ Section -->
+<section style="padding: 80px 0; background: #fff; border-top: 1px solid #DDD8CF;">
+  <div class="ctn" style="max-width: 800px;">
+    <h2 style="font-size: 48px; font-weight: 800; text-align: center; margin-bottom: 48px; letter-spacing: -0.02em;">FAQs</h2>
+    
+    <div style="display: flex; flex-direction: column; gap: 12px; font-family: 'Inter', sans-serif;" class="custom-faq-list">
+      
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Is Dark Belgian Chocolate Oats good for weight loss?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, it is high in fibre and protein which helps keep you full for longer.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Can I eat Dark Belgian Chocolate Oats daily?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, it is suitable as a regular healthy breakfast option.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Does it contain added sugar?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          No, this product contains no added sugar.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Is it suitable for gym diets?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, the 18g protein content makes it suitable for fitness-focused diets.
+        </div>
+      </details>
+
+      <details style="background: #1A1A1A; color: #F8F6F2; border-radius: 8px; overflow: hidden; font-family: inherit;">
+        <summary style="padding: 20px 24px; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+          <span>Can kids eat Dark Belgian Chocolate Oats?</span>
+          <span style="font-size: 20px; font-family: monospace;" class="faq-icon">›</span>
+        </summary>
+        <div style="padding: 0 24px 24px; font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.6;">
+          Yes, it can be enjoyed by both kids and adults.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- Include CSS to rotate the arrow icon when details is open -->
+<style>
+.custom-faq-list details[open] summary .faq-icon {
+  transform: rotate(90deg);
+}
+.custom-faq-list details summary::-webkit-details-marker {
+  display:none;
+}
+.custom-faq-list .faq-icon {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+</style>
+
+
+
 <!-- You might also like section -->
 
 <section style="padding: 80px 0; background: #FAF9F6; border-top: 1px solid #DDD8CF;">
@@ -1416,22 +1835,22 @@ createPage('product-pb.html', `
     <div class="prod-grid ymal-custom-grid">
       
     <div class="prod-card">
-      <a href="product-bowl.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=400&q=80&auto=format&fit=crop" alt="Mango Oats" style="border-radius:12px" /></a>
+      <a href="product-mocha.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?w=400&q=80&auto=format&fit=crop" alt="Mocha Rush Oats" style="border-radius:12px" /></a>
       <div class="prod-body">
-        <div class="prod-top"><div style="flex:1"><a href="product-bowl.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mango Oats</h3></a><p class="prod-tagline">Focus Breakfast</p></div><span class="badge">18g Protein</span></div>
+        <div class="prod-top"><div style="flex:1"><a href="product-mocha.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mocha Rush Oats</h3></a><p class="prod-tagline">Do It Anyway.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Mango</span><span>Oats</span><span>Seeds</span><span>Ragi</span></div>
+        <div class="prod-ingredients"><span>Coffee</span><span>Cocoa</span><span>Oats</span></div>
         <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
 
     <div class="prod-card">
-      <a href="product-bar.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1622484212850-eb596d769edc?w=400&q=80&auto=format&fit=crop" alt="9AM Protein Bar" style="border-radius:12px" /></a>
+      <a href="product-chocolate.html" class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1607914841961-75df13fd2565?w=400&q=80&auto=format&fit=crop" alt="Dark Belgian Chocolate Oats" style="border-radius:12px" /></a>
       <div class="prod-body">
-        <div class="prod-top"><div style="flex:1"><a href="product-bar.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">9AM Protein Bar</h3></a><p class="prod-tagline">Fuel, not a treat</p></div><span class="badge">30g Protein</span></div>
+        <div class="prod-top"><div style="flex:1"><a href="product-chocolate.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Dark Belgian Chocolate Oats</h3></a><p class="prod-tagline">Own Your Morning.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Real Cocoa</span><span>Whey Protein</span><span>Oats</span></div>
-        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹149</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
+        <div class="prod-ingredients"><span>Cocoa</span><span>Almonds</span><span>Oats</span></div>
+        <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
 
@@ -1443,6 +1862,18 @@ createPage('product-pb.html', `
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 800px;
   margin: 0 auto;
+}
+</style>
+<!-- Include CSS for the layout to be responsive -->
+<style>
+@media (max-width: 768px) {
+  .product-layout {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .product-layout > div:first-child {
+    position: static !important;
+  }
 }
 </style>
 `);
