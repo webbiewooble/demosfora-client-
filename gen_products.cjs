@@ -51,7 +51,7 @@ createPage('product-bowl.html', `
         </div>
         
         <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">Mango Grain Oats</h1>
-        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Mango | Net Weight: 350g | Servings: 5 (70g each)</p>
+        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Mango | Net Weight: 75g | Serving: 1</p>
         
         <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 32px;">
           <span style="font-family:'DM Serif Display'; font-size: 32px; color: #1A1A1A;">₹499</span>
@@ -170,7 +170,7 @@ createPage('product-bowl.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="onetime" checked>
-                One-Time Order
+                Start Now
               </div>
               <span>₹499</span>
             </div>
@@ -200,14 +200,14 @@ createPage('product-bowl.html', `
               </div>
               <span id="custom-price-display">₹499</span>
             </div>
-            <div class="po-desc">Select custom number of packets/days.</div>
+            <div class="po-desc">Select custom number of packets/days (minimum 7 packets).</div>
             <div class="po-extra" onclick="event.stopPropagation()">
               <div style="display: flex; flex-direction: column; gap: 16px;">
                 <div>
                   <p style="font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #1A1A1A;">Packets per delivery:</p>
                   <div class="qty-control">
                     <button type="button" class="qty-btn" onclick="changeCustomQty(-1)">-</button>
-                    <input type="text" id="custom-qty" class="qty-input" value="1" readonly>
+                    <input type="text" id="custom-qty" class="qty-input" value="7" readonly>
                     <button type="button" class="qty-btn" onclick="changeCustomQty(1)">+</button>
                   </div>
                 </div>
@@ -234,8 +234,17 @@ createPage('product-bowl.html', `
           <button id="main-add-btn" class="btn btn-dark" onclick="handleAddToCart()" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹499</button>
         </div>
 
+        <div style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 40px; font-size: 13px; color: #1A1A1A; font-weight: 500; background: #EAE6DF; padding: 12px 16px; border-radius: 8px; border: 1px solid #DDD8CF;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A27A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+          <div>Independently lab-tested for purity and nutrition. Quality you can trust.</div>
+        </div>
+
+
         <script>
-          let customQty = 1;
+          let customQty = 7;
           
           function getPageContext(element) {
              // Find closest product area container if we had multiple, but we only have 1 product per page here.
@@ -293,7 +302,7 @@ createPage('product-bowl.html', `
 
           window.changeCustomQty = function(delta) {
             customQty += delta;
-            if (customQty < 1) customQty = 1;
+            if (customQty < 7) customQty = 7;
             const els = getElements();
             if (els.customQtyInput) els.customQtyInput.value = customQty;
             if (window.isCustom) calculateCustomTotal();
@@ -370,11 +379,12 @@ createPage('product-bowl.html', `
             </summary>
             <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
               <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                 <li>Ragi (Main Ingredient)</li>
                  <li>Oats</li>
-                 <li>Mango Powder</li>
-                 <li>Seeds</li>
-                 <li>Ragi</li>
                  <li>Whey Protein</li>
+                 <li>Date Powder</li>
+                 <li>Chia & Flax Seeds</li>
+                 <li>Mango Powder</li>
               </ul>
             </div>
           </details>
@@ -436,6 +446,14 @@ createPage('product-bowl.html', `
   <div class="ctn">
     <h2 style="font-size: 36px; font-weight: 800; text-transform: capitalize; margin-bottom: 48px; color: #000;">Ingredients</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+
+      <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">RAGI</h3>
+        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+           <img src="https://images.unsplash.com/photo-1588684490013-05ec0deec14b?auto=format&fit=crop&q=80&w=300" alt="Ragi" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Our power-packed main ingredient for sustained energy and daily fibre.</p>
+      </div>
       
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
         <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">WHEY<br>PROTEIN</h3>
@@ -454,19 +472,11 @@ createPage('product-bowl.html', `
       </div>
 
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">JAGGERY<br>POWDER</h3>
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">CHIA &amp;<br>FLAX</h3>
         <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
-           <img src="https://images.unsplash.com/photo-1620986794689-d4da44ecfc87?auto=format&fit=crop&q=80&w=300" alt="Jaggery Powder" style="width: 100%; height: 100%; object-fit: cover;">
+           <img src="https://images.unsplash.com/photo-1506456073749-d7da4073bd31?auto=format&fit=crop&q=80&w=300" alt="Chia and Flax Seeds" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Natural sweetness that gives energy, not a sugar crash.</p>
-      </div>
-
-      <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">FLAX<br>SEEDS</h3>
-        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
-           <img src="https://images.unsplash.com/photo-1506456073749-d7da4073bd31?auto=format&fit=crop&q=80&w=300" alt="Flax Seeds" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">For smoother digestion and everyday gut support.</p>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">A unified blend for smoother digestion and everyday gut support.</p>
       </div>
 
     </div>
@@ -562,7 +572,7 @@ createPage('product-bowl.html', `
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-mocha.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mocha Rush Oats</h3></a><p class="prod-tagline">Do It Anyway.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Coffee</span><span>Cocoa</span><span>Oats</span></div>
+        <div class="prod-ingredients"><span>Ragi</span><span>Whey</span><span>Coffee</span></div>
         <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
@@ -572,7 +582,7 @@ createPage('product-bowl.html', `
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-chocolate.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Dark Belgian Chocolate Oats</h3></a><p class="prod-tagline">Own Your Morning.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Cocoa</span><span>Almonds</span><span>Oats</span></div>
+        <div class="prod-ingredients"><span>Ragi</span><span>Whey</span><span>Cocoa</span></div>
         <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
@@ -641,7 +651,7 @@ createPage('product-mocha.html', `
         </div>
         
         <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">Mocha Rush Oats</h1>
-        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Mocha | Net Weight: 350g | Servings: 5 (70g each)</p>
+        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Mocha | Net Weight: 75g | Serving: 1</p>
         
         <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 32px;">
           <span style="font-family:'DM Serif Display'; font-size: 32px; color: #1A1A1A;">₹499</span>
@@ -762,7 +772,7 @@ createPage('product-mocha.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="onetime" checked>
-                One-Time Order
+                Start Now
               </div>
               <span>₹499</span>
             </div>
@@ -792,14 +802,14 @@ createPage('product-mocha.html', `
               </div>
               <span id="custom-price-display">₹499</span>
             </div>
-            <div class="po-desc">Select custom number of packets/days.</div>
+            <div class="po-desc">Select custom number of packets/days (minimum 7 packets).</div>
             <div class="po-extra" onclick="event.stopPropagation()">
               <div style="display: flex; flex-direction: column; gap: 16px;">
                 <div>
                   <p style="font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #1A1A1A;">Packets per delivery:</p>
                   <div class="qty-control">
                     <button type="button" class="qty-btn" onclick="changeCustomQty(-1)">-</button>
-                    <input type="text" id="custom-qty" class="qty-input" value="1" readonly>
+                    <input type="text" id="custom-qty" class="qty-input" value="7" readonly>
                     <button type="button" class="qty-btn" onclick="changeCustomQty(1)">+</button>
                   </div>
                 </div>
@@ -826,8 +836,17 @@ createPage('product-mocha.html', `
           <button id="main-add-btn" class="btn btn-dark" onclick="handleAddToCart()" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹499</button>
         </div>
 
+        <div style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 40px; font-size: 13px; color: #1A1A1A; font-weight: 500; background: #EAE6DF; padding: 12px 16px; border-radius: 8px; border: 1px solid #DDD8CF;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A27A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+          <div>Independently lab-tested for purity and nutrition. Quality you can trust.</div>
+        </div>
+
+
         <script>
-          let customQty = 1;
+          let customQty = 7;
           
           function getPageContext(element) {
              // Find closest product area container if we had multiple, but we only have 1 product per page here.
@@ -885,7 +904,7 @@ createPage('product-mocha.html', `
 
           window.changeCustomQty = function(delta) {
             customQty += delta;
-            if (customQty < 1) customQty = 1;
+            if (customQty < 7) customQty = 7;
             const els = getElements();
             if (els.customQtyInput) els.customQtyInput.value = customQty;
             if (window.isCustom) calculateCustomTotal();
@@ -962,12 +981,13 @@ createPage('product-mocha.html', `
             </summary>
             <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
               <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                 <li>Ragi (Main Ingredient)</li>
                  <li>Oats</li>
+                 <li>Whey Protein</li>
+                 <li>Date Powder</li>
+                 <li>Chia & Flax Seeds</li>
                  <li>Coffee</li>
                  <li>Cocoa</li>
-                 <li>Seeds</li>
-                 <li>Ragi</li>
-                 <li>Whey Protein</li>
               </ul>
             </div>
           </details>
@@ -1074,6 +1094,14 @@ createPage('product-mocha.html', `
   <div class="ctn">
     <h2 style="font-size: 36px; font-weight: 800; text-transform: capitalize; margin-bottom: 48px; color: #000;">Ingredients</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+
+      <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">RAGI</h3>
+        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+           <img src="https://images.unsplash.com/photo-1588684490013-05ec0deec14b?auto=format&fit=crop&q=80&w=300" alt="Ragi" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Our power-packed main ingredient for sustained energy and daily fibre.</p>
+      </div>
       
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
         <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">WHEY<br>PROTEIN</h3>
@@ -1084,27 +1112,19 @@ createPage('product-mocha.html', `
       </div>
 
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">COFFEE</h3>
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">DATE<br>POWDER</h3>
         <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
            <img src="https://images.unsplash.com/photo-1596541603597-94420bf051c5?auto=format&fit=crop&q=80&w=300" alt="Date Powder" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Real coffee for focus and smooth flavor.</p>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Naturally sweet, nutrient-rich energy in every bite.</p>
       </div>
 
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">COCOA</h3>
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">CHIA &amp;<br>FLAX</h3>
         <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
-           <img src="https://images.unsplash.com/photo-1620986794689-d4da44ecfc87?auto=format&fit=crop&q=80&w=300" alt="Jaggery Powder" style="width: 100%; height: 100%; object-fit: cover;">
+           <img src="https://images.unsplash.com/photo-1506456073749-d7da4073bd31?auto=format&fit=crop&q=80&w=300" alt="Chia and Flax Seeds" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Rich chocolate flavor with antioxidants.</p>
-      </div>
-
-      <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">FLAX<br>SEEDS</h3>
-        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
-           <img src="https://images.unsplash.com/photo-1506456073749-d7da4073bd31?auto=format&fit=crop&q=80&w=300" alt="Flax Seeds" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">For smoother digestion and everyday gut support.</p>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">A unified blend for smoother digestion and everyday gut support.</p>
       </div>
 
     </div>
@@ -1200,7 +1220,7 @@ createPage('product-mocha.html', `
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-mocha.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mocha Rush Oats</h3></a><p class="prod-tagline">Do It Anyway.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Coffee</span><span>Cocoa</span><span>Oats</span></div>
+        <div class="prod-ingredients"><span>Ragi</span><span>Whey</span><span>Coffee</span></div>
         <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
@@ -1210,7 +1230,7 @@ createPage('product-mocha.html', `
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-chocolate.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Dark Belgian Chocolate Oats</h3></a><p class="prod-tagline">Own Your Morning.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Cocoa</span><span>Almonds</span><span>Oats</span></div>
+        <div class="prod-ingredients"><span>Ragi</span><span>Whey</span><span>Cocoa</span></div>
         <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
@@ -1278,7 +1298,7 @@ createPage('product-chocolate.html', `
         </div>
         
         <h1 style="margin-bottom: 8px; font-size: clamp(32px, 4vw, 42px); line-height: 1.1;">Dark Belgian Chocolate Oats</h1>
-        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Dark Chocolate | Net Weight: 350g | Servings: 5 (70g each)</p>
+        <p style="font-size: 16px; color: #8A8A8A; margin-bottom: 24px;">Flavor: Dark Chocolate | Net Weight: 75g | Serving: 1</p>
         
         <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 32px;">
           <span style="font-family:'DM Serif Display'; font-size: 32px; color: #1A1A1A;">₹499</span>
@@ -1400,7 +1420,7 @@ createPage('product-chocolate.html', `
             <div class="po-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <input type="radio" name="purchase_option" class="po-radio" value="onetime" checked>
-                One-Time Order
+                Start Now
               </div>
               <span>₹499</span>
             </div>
@@ -1430,14 +1450,14 @@ createPage('product-chocolate.html', `
               </div>
               <span id="custom-price-display">₹499</span>
             </div>
-            <div class="po-desc">Select custom number of packets/days.</div>
+            <div class="po-desc">Select custom number of packets/days (minimum 7 packets).</div>
             <div class="po-extra" onclick="event.stopPropagation()">
               <div style="display: flex; flex-direction: column; gap: 16px;">
                 <div>
                   <p style="font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #1A1A1A;">Packets per delivery:</p>
                   <div class="qty-control">
                     <button type="button" class="qty-btn" onclick="changeCustomQty(-1)">-</button>
-                    <input type="text" id="custom-qty" class="qty-input" value="1" readonly>
+                    <input type="text" id="custom-qty" class="qty-input" value="7" readonly>
                     <button type="button" class="qty-btn" onclick="changeCustomQty(1)">+</button>
                   </div>
                 </div>
@@ -1464,8 +1484,17 @@ createPage('product-chocolate.html', `
           <button id="main-add-btn" class="btn btn-dark" onclick="handleAddToCart()" style="flex: 1; padding: 16px; font-size: 16px;">Add to Cart - ₹499</button>
         </div>
 
+        <div style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 40px; font-size: 13px; color: #1A1A1A; font-weight: 500; background: #EAE6DF; padding: 12px 16px; border-radius: 8px; border: 1px solid #DDD8CF;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A27A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+          <div>Independently lab-tested for purity and nutrition. Quality you can trust.</div>
+        </div>
+
+
         <script>
-          let customQty = 1;
+          let customQty = 7;
           
           function getPageContext(element) {
              // Find closest product area container if we had multiple, but we only have 1 product per page here.
@@ -1523,7 +1552,7 @@ createPage('product-chocolate.html', `
 
           window.changeCustomQty = function(delta) {
             customQty += delta;
-            if (customQty < 1) customQty = 1;
+            if (customQty < 7) customQty = 7;
             const els = getElements();
             if (els.customQtyInput) els.customQtyInput.value = customQty;
             if (window.isCustom) calculateCustomTotal();
@@ -1599,12 +1628,13 @@ createPage('product-chocolate.html', `
             </summary>
             <div style="padding-top: 16px; color: #8A8A8A; line-height: 1.6; font-size: 15px;">
               <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                 <li>Ragi (Main Ingredient)</li>
                  <li>Oats</li>
+                 <li>Whey Protein</li>
+                 <li>Date Powder</li>
+                 <li>Chia & Flax Seeds</li>
                  <li>Cocoa</li>
                  <li>Almonds</li>
-                 <li>Seeds</li>
-                 <li>Ragi</li>
-                 <li>Whey Protein</li>
               </ul>
             </div>
           </details>
@@ -1713,6 +1743,14 @@ createPage('product-chocolate.html', `
   <div class="ctn">
     <h2 style="font-size: 36px; font-weight: 800; text-transform: capitalize; margin-bottom: 48px; color: #000;">Ingredients</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+
+      <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">RAGI</h3>
+        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
+           <img src="https://images.unsplash.com/photo-1588684490013-05ec0deec14b?auto=format&fit=crop&q=80&w=300" alt="Ragi" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Our power-packed main ingredient for sustained energy and daily fibre.</p>
+      </div>
       
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
         <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">WHEY<br>PROTEIN</h3>
@@ -1723,27 +1761,19 @@ createPage('product-chocolate.html', `
       </div>
 
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">COCOA<br>POWDER</h3>
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">DATE<br>POWDER</h3>
         <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
            <img src="https://images.unsplash.com/photo-1596541603597-94420bf051c5?auto=format&fit=crop&q=80&w=300" alt="Date Powder" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Rich chocolate flavor with antioxidants.</p>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Naturally sweet, nutrient-rich energy in every bite.</p>
       </div>
 
       <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">JAGGERY<br>POWDER</h3>
+        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">CHIA &amp;<br>FLAX</h3>
         <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
-           <img src="https://images.unsplash.com/photo-1620986794689-d4da44ecfc87?auto=format&fit=crop&q=80&w=300" alt="Jaggery Powder" style="width: 100%; height: 100%; object-fit: cover;">
+           <img src="https://images.unsplash.com/photo-1506456073749-d7da4073bd31?auto=format&fit=crop&q=80&w=300" alt="Chia and Flax Seeds" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">Natural sweetness that gives energy, not a sugar crash.</p>
-      </div>
-
-      <div style="background: #F5F5F3; border-radius: 16px; padding: 40px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <h3 style="color: #8C593B; font-size: 24px; font-weight: 900; line-height: 1.1; margin-bottom: 24px; text-transform: uppercase;">FLAX<br>SEEDS</h3>
-        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 24px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
-           <img src="https://images.unsplash.com/photo-1506456073749-d7da4073bd31?auto=format&fit=crop&q=80&w=300" alt="Flax Seeds" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">For smoother digestion and everyday gut support.</p>
+        <p style="font-size: 14px; font-weight: 500; color: #555; line-height: 1.5;">A unified blend for smoother digestion and everyday gut support.</p>
       </div>
 
     </div>
@@ -1839,7 +1869,7 @@ createPage('product-chocolate.html', `
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-mocha.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Mocha Rush Oats</h3></a><p class="prod-tagline">Do It Anyway.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Coffee</span><span>Cocoa</span><span>Oats</span></div>
+        <div class="prod-ingredients"><span>Ragi</span><span>Whey</span><span>Coffee</span></div>
         <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
@@ -1849,7 +1879,7 @@ createPage('product-chocolate.html', `
       <div class="prod-body">
         <div class="prod-top"><div style="flex:1"><a href="product-chocolate.html" style="text-decoration: none; color: inherit;"><h3 style="margin-bottom:2px">Dark Belgian Chocolate Oats</h3></a><p class="prod-tagline">Own Your Morning.</p></div><span class="badge">18g Protein</span></div>
         <div class="divider"></div>
-        <div class="prod-ingredients"><span>Cocoa</span><span>Almonds</span><span>Oats</span></div>
+        <div class="prod-ingredients"><span>Ragi</span><span>Whey</span><span>Cocoa</span></div>
         <div class="prod-bottom" style="margin-top: 16px;"><span class="prod-price">₹499</span><button class="btn btn-dark btn-sm">Add to cart</button></div>
       </div>
     </div>
